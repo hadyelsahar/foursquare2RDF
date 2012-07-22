@@ -28,6 +28,7 @@ namespace foursquare2RDF
          IUriNode checkCountProperty = g.CreateUriNode(new Uri ("http://foursquare2rdf/ontology/checkcount"));
          IUriNode userCountProperty = g.CreateUriNode(new Uri ("http://foursquare2rdf/ontology/usercount"));
          IUriNode tipCountProperty = g.CreateUriNode(new Uri ("http://foursquare2rdf/ontology/tipcount"));
+         IUriNode countryProperty = g.CreateUriNode(new Uri ("http://dbpedia.org/property/locationCountry"));
          #endregion
 
          rdfwrapper rdfWrapper = new rdfwrapper("VenuesDB2.rdf");
@@ -36,10 +37,17 @@ namespace foursquare2RDF
          foreach (JToken element in S1)
          {
              IUriNode venueNode = g.CreateUriNode(new Uri("http://foursquare2RDF.com/Venue/"+ element["id"]));
-             ILiteralNode venueNameNode = g.CreateLiteralNode(element["name"].ToString());
+             //ILiteralNode venueNameNode = g.CreateLiteralNode(element["name"].ToString());
+             
 
              //filling node labels 
              g.Assert(new Triple(venueNode, labelProperty, g.CreateLiteralNode(element["name"].ToString())));
+             g.Assert(new Triple (venueNode ,latitudeProperty , g.CreateLiteralNode(element["location"]["lat"].ToString())));
+             g.Assert(new Triple (venueNode ,longtitudeProperty , g.CreateLiteralNode(element["location"]["lng"].ToString())));
+             g.Assert(new Triple (venueNode ,countryProperty, g.CreateLiteralNode(element["location"]["country"].ToString())));
+             g.Assert(new Triple(venueNode, checkCountProperty, g.CreateLiteralNode(element["stats"]["checkinsCount"].ToString())));
+             g.Assert(new Triple(venueNode, tipCountProperty, g.CreateLiteralNode(element["stats"]["tipCount"].ToString())));
+             g.Assert(new Triple(venueNode, userCountProperty, g.CreateLiteralNode(element["stats"]["usersCount"].ToString())));
              
          }
 
