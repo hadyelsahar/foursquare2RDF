@@ -6,3 +6,14 @@ E:\Users\hady\Desktop\FourSquare2RDF\foursquare2RDF\bin\Debug\Newtonsoft.Json.dl
 E:\Users\hady\Desktop\FourSquare2RDF\foursquare2RDF\bin\Debug\Newtonsoft.Json.pdb
 E:\Users\hady\Desktop\FourSquare2RDF\foursquare2RDF\bin\Debug\Newtonsoft.Json.xml
 E:\Users\hady\Desktop\FourSquare2RDF\foursquare2RDF\obj\x86\Debug\foursquare2RDF.csprojResolveAssemblyReference.cache
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\obj\x86\Debug\foursquare2RDF.exe
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\obj\x86\Debug\foursquare2RDF.pdb
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\bin\Debug\foursquare2RDF.exe
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\bin\Debug\foursquare2RDF.pdb
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\bin\Debug\Newtonsoft.Json.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\bin\Debug\Newtonsoft.Json.pdb
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\bin\Debug\Newtonsoft.Json.xml
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\obj\x86\Debug\foursquare2RDF.csprojResolveAssemblyReference.cache
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\bin\Debug\dotNetRDF.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\bin\Debug\HtmlAgilityPack.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\FourSquare2RDF\foursquare2RDF\bin\Debug\dotNetRDF.xml

@@ -9,11 +9,8 @@ namespace foursquare2RDF
 {
     public static class util
     {
-        public const string clientID = "SUFGRFKOSKRXC0AE35NHTIDAIGMQEZW4W43CAIAOM0QRDDT4";
-        public const string clientSecret = "24RDEHJ0ARTUSS5EXKPFLIQCOFXKWPGHFLZ15H1CM5WDOV3E";
-        
-        //public const string oauthToken = "JMTEROO2BHMRRKPOGGUBRUBMTZKQY5A4WU4WH4LWC4VZF0BE";
 
+       
         /// <summary>
         /// 
         /// </summary>
@@ -56,5 +53,30 @@ namespace foursquare2RDF
             }
             return responseString;
         }
+
+
+        /// <summary>
+        /// log text to the log file 
+        /// </summary>
+        /// <param name="s">string to be logged in the Logfile</param>
+        public static void log(string s)
+        {
+
+            StreamWriter logWriter = File.AppendText(@".\Log.txt");
+            logWriter.Write(s + "\t" + DateTime.Now.ToLongTimeString().ToString() + "\n");
+            logWriter.Close();
+        }
+        /// <summary>
+        /// empty the log file 
+        /// </summary>
+        public static void clearLog()
+        {
+            FileStream fileStream = File.Open(@".\Log.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            fileStream.SetLength(0);
+            fileStream.Flush();
+            fileStream.Close();
+
+        }
+
     }
 }
