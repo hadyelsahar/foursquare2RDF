@@ -1,0 +1,12 @@
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\obj\Debug\foursquare2RDF.csprojResolveAssemblyReference.cache
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\foursquare2RDF.dll.config
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\foursquare2RDF.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\foursquare2RDF.pdb
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\dotNetRDF.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\Newtonsoft.Json.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\HtmlAgilityPack.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\dotNetRDF.xml
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\Newtonsoft.Json.pdb
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\Newtonsoft.Json.xml
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\obj\Debug\foursquare2RDF.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\obj\Debug\foursquare2RDF.pdb

@@ -12,19 +12,27 @@ namespace foursquare2RDF
     {
         public string filepath;
 
+        /// <summary>
+        /// class constructor
+        /// </summary>
+        /// <param name="filepath">file path to save RDF in</param>
         public rdfwrapper(string filepath)
         {
             this.filepath = filepath;
-            //if (!File.Exists(filepath))
-            //{
-            //    File.Create(filepath);
-            //}
         }
 
         public void writeIntoFile (Graph g)
         {
             NTriplesWriter ntwriter = new NTriplesWriter();
             ntwriter.Save(g, filepath);
+        }
+
+        /// <summary>
+        /// class destructor
+        /// </summary>
+        ~rdfwrapper()
+        {
+            
         }
     }
 }

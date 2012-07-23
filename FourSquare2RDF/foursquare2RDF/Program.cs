@@ -14,7 +14,7 @@ namespace foursquare2RDF
 
         static void Main(string[] args)
         {
-         JObject venuesObject =  venuewrapper.getVenues("cairo", "macdonalds");
+         JObject venuesObject =  venuewrapper.getVenues("chicago", "macdonalds");
          Graph g = new Graph();
 
          #region properties Definition
@@ -39,7 +39,6 @@ namespace foursquare2RDF
              IUriNode venueNode = g.CreateUriNode(new Uri("http://foursquare2RDF.com/Venue/"+ element["id"]));
              //ILiteralNode venueNameNode = g.CreateLiteralNode(element["name"].ToString());
              
-
              //filling node labels 
              g.Assert(new Triple(venueNode, labelProperty, g.CreateLiteralNode(element["name"].ToString())));
              g.Assert(new Triple (venueNode ,latitudeProperty , g.CreateLiteralNode(element["location"]["lat"].ToString())));
