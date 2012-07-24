@@ -1,0 +1,15 @@
+<http://dbpedia.org/resource/Nike,_Inc.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> .
+<http://dbpedia.org/resource/Nike,_Inc.> <http://www.w3.org/2000/01/rdf-schema#label> "Nike, Inc."@ca .
+<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Nike,_Inc.> .
+<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://www.w3.org/2000/01/rdf-schema#label> "Nike" .
+<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "31.0454786226809" .
+<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3595712620151" .
+<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://foursquare2rdf/ontology/checkcount> "6" .
+<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://foursquare2rdf/ontology/usercount> "3" .
+<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://www.w3.org/2000/01/rdf-schema#label> "Clothing Store" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://purl.org/net/vocab/2004/03/label#plural> "Clothing Stores" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://purl.org/net/vocab/2004/03/label#short> "Apparel" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .

@@ -5,6 +5,7 @@ using System.Text;
 using VDS.RDF;
 using VDS.RDF.Writing;
 using VDS.RDF.Parsing;
+using VDS.RDF.Query;
 using System.IO;
 
 namespace foursquare2RDF
@@ -22,7 +23,6 @@ namespace foursquare2RDF
             this.filepath = filepath;
         }
 
-
         /// <summary>
         /// read the stored RDF file and return it into a graph
         /// </summary>
@@ -36,7 +36,7 @@ namespace foursquare2RDF
 
                 //Load using Filename
                 ntparser.Load(g, filepath);
-                return g; 
+                return g;
             }
             catch (RdfParseException parseEx)
             {
@@ -45,29 +45,64 @@ namespace foursquare2RDF
             }
             catch (RdfException rdfEx)
             {
-               util.log("RDF Error");
-               util.log(rdfEx.Message);
+                util.log("RDF Error");
+                util.log(rdfEx.Message);
             }
 
-            return null ; 
+            return null;
         }
 
         /// <summary>
         /// function writes a graph into an RDF file
         /// </summary>
         /// <param name="g">graph to be written to rdf file</param>
-        public void writeGraphIntoFile (Graph g)
+        public void writeGraphIntoFile(Graph g)
         {
             NTriplesWriter ntwriter = new NTriplesWriter();
             ntwriter.Save(g, filepath);
         }
 
         /// <summary>
+        /// querying for companies from a triple store , return the result in the form of 
+        /// </summary>
+        public List<Triple> getCompanyfromDBpedia(string company, int limit = 1)
+        {
+
+            string query = "	select distinct ?subject ?type ?literal where{ " +
+                    "?subject <http://www.w3.org/2000/01/rdf-schema#label> ?literal. " +
+                    "?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ." +
+                    "Filter ( " +
+                    "?type = <http://dbpedia.org/resource/Public_company> || " +
+                    "?type= <http://dbpedia.org/resource/Aktiengesellschaft> || " +
+                    "?type= <http://dbpedia.org/ontology/Company>" +
+                    ")" +
+                    "?literal bif:contains '\"" + company.Escape('\'') + "\"'.} limit " + limit + "";
+
+            SparqlResultSet resultSet = util.executeSparqlQuery(query);
+
+            List<Triple> companyTriples = new List<Triple>();
+            Graph g = new Graph();
+            foreach (SparqlResult result in resultSet)
+            {
+                UriNode companyNode = (UriNode)result.Value("subject");
+                UriNode typeNode = (UriNode)result.Value("type");
+                LiteralNode labelNode = (LiteralNode)result.Value("literal");
+
+                companyTriples.Add(new Triple(Tools.CopyNode(companyNode, g), Tools.CopyNode(Venue2rdf.typeProperty,g), Tools.CopyNode(typeNode, g)));
+                companyTriples.Add(new Triple(Tools.CopyNode(companyNode, g), Tools.CopyNode(Venue2rdf.labelProperty,g), Tools.CopyNode(labelNode, g)));
+
+            }
+
+            return companyTriples;
+        }
+
+
+        /// <summary>
         /// class destructor
         /// </summary>
         ~rdfwrapper()
         {
-            
+
         }
     }
 }

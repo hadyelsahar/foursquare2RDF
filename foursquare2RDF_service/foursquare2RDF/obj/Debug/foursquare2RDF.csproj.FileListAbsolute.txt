@@ -6,7 +6,11 @@ E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2
 E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\Newtonsoft.Json.dll
 E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\HtmlAgilityPack.dll
 E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\dotNetRDF.xml
-E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\Newtonsoft.Json.pdb
-E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\Newtonsoft.Json.xml
 E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\obj\Debug\foursquare2RDF.dll
 E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\obj\Debug\foursquare2RDF.pdb
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\dotNetRDF.Data.Virtuoso.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\dotNetRDF.Query.FullText.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\Lucene.Net.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\OpenLink.Data.Virtuoso.dll
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\dotNetRDF.Data.Virtuoso.xml
+E:\Users\hady\Documents\GitHub\foursquare2RDF\foursquare2RDF_service\foursquare2RDF\bin\Debug\dotNetRDF.Query.FullText.xml

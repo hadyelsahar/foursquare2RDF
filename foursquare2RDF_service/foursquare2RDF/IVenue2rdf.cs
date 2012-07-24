@@ -13,8 +13,10 @@ namespace foursquare2RDF
     {
         // TODO: Add your service operations here
         [OperationContract]
-       void addVenuesToGraph(string venue, string near);
+        void addVenuesToGraph(string venue, string near);
 
+        [OperationContract]
+        void addVenuesToGraphLL(string venue, float longtitude , float latitude);
     }
 
 }

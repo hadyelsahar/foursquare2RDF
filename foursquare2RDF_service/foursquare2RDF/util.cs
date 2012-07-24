@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Net;
+using VDS.RDF.Query;
 using System.IO;
+using VDS.RDF.Storage;
+using VDS.RDF.Parsing;
 
 namespace foursquare2RDF
 {
@@ -12,9 +15,9 @@ namespace foursquare2RDF
 
        
         /// <summary>
-        /// 
+        /// send a get request to a specific URI
         /// </summary>
-        /// <returns></returns>
+        /// <returns>string of the return message</returns>
         public static string get(string url)
         {
            
@@ -35,6 +38,10 @@ namespace foursquare2RDF
             return responseString ;
         }
 
+        /// <summary>
+        /// send a post request to a specific URI
+        /// </summary>
+        /// <returns>string of the return message</returns>
         public static string post(string url)
         {
             string responseString;
@@ -54,6 +61,30 @@ namespace foursquare2RDF
             return responseString;
         }
 
+        /// <summary>
+        /// do a HTTP request using a sparql query from a sparql endpoint stated in a file
+        /// </summary>
+        /// <param name="request">sparql Query to be executed</param>
+        /// <returns>set of results resulted from executing the query</returns>
+        public static SparqlResultSet executeSparqlQuery(string request)
+        {
+            SparqlResultSet toreturn = new SparqlResultSet();
+            try
+            {
+                StreamReader sr = new StreamReader("endpointURI.txt");
+                SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri(sr.ReadLine()));
+                sr.Close();
+                endpoint.Timeout = 999999;
+                toreturn = endpoint.QueryWithResultSet(request);
+            }
+            catch (Exception e)
+            {
+
+                util.log(request + e.Message + "==>" + e.Data);
+            }
+            return toreturn;
+
+        }
 
         /// <summary>
         /// log text to the log file 

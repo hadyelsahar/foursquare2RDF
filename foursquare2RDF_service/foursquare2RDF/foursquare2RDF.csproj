@@ -37,9 +37,26 @@
     <Reference Include="dotNetRDF">
       <HintPath>dotnetrdf_library_070_beta\Core\net40\dotNetRDF.dll</HintPath>
     </Reference>
+    <Reference Include="dotNetRDF.Data.Virtuoso">
+      <HintPath>dotnetrdf_library_070_beta\Data\Virtuoso\net40\dotNetRDF.Data.Virtuoso.dll</HintPath>
+    </Reference>
+    <Reference Include="dotNetRDF.Query.FullText">
+      <HintPath>dotnetrdf_library_070_beta\Query\FullText\net40\dotNetRDF.Query.FullText.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dotnetrdf_library_070_beta\Core\net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>dotnetrdf_library_070_beta\Query\FullText\net40\Lucene.Net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>JsonParser\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dotnetrdf_library_070_beta\Core\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenLink.Data.Virtuoso">
+      <HintPath>dotnetrdf_library_070_beta\Data\Virtuoso\net40\OpenLink.Data.Virtuoso.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
