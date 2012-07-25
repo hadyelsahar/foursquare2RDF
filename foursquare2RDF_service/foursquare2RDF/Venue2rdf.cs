@@ -62,29 +62,38 @@ namespace foursquare2RDF
         /// </summary>
         /// <param name="venue">keyword for the venue to search for</param>
         /// <param name="near">the keyword of the entity to search near to</param>
-        public void addVenuesToGraph(string venue, string near)
+        public bool addVenuesToGraph(string venue, string near)
         {
-
-            List<Triple> companyTriples = rdfWrapper.getCompanyfromDBpedia(venue);
-
-            //which means  one or more dbpedia owner company found
-            if (companyTriples.Count >= 2)
+            try
             {
 
-                JObject venuesObject = venuewrapper.getVenues(venue, near);
-                JToken S1 = venuesObject["response"]["venues"];
+                List<Triple> companyTriples = rdfWrapper.getCompanyfromDBpedia(venue);
 
-                //adding the company properties extracted from dbpedia to the Graph
-                foreach (Triple t in companyTriples)
+                //which means  one or more dbpedia owner company found
+                if (companyTriples.Count >= 2)
                 {
-                    VenuesGraph.Assert(t);
+
+                    JObject venuesObject = venuewrapper.getVenues(venue, near);
+                    JToken S1 = venuesObject["response"]["venues"];
+
+                    //adding the company properties extracted from dbpedia to the Graph
+                    foreach (Triple t in companyTriples)
+                    {
+                        VenuesGraph.Assert(t);
+                    }
+
+                    VenuesGraph = assertSpecialPropertiesToGraph(VenuesGraph, S1, Tools.CopyNode(companyTriples[1].Subject, VenuesGraph));
+
                 }
 
-                VenuesGraph = assertSpecialPropertiesToGraph(VenuesGraph, S1, Tools.CopyNode(companyTriples[1].Subject, VenuesGraph));
+                rdfWrapper.writeGraphIntoFile(VenuesGraph);
+                return true;
+            }
+            catch
+            {
+                return false;
 
             }
-
-            rdfWrapper.writeGraphIntoFile(VenuesGraph);
         }
 
         /// <summary>
@@ -93,26 +102,34 @@ namespace foursquare2RDF
         /// <param name="venue">keyword for the venue to search for</param>
         /// <param name="latitude">latitude to search near to</param>
         /// <param name="longtitude">longtitude to search near to</param>
-        public void addVenuesToGraphLL(string venue, float latitude, float longtitude)
+        public bool addVenuesToGraphLL(string venue, float latitude, float longtitude)
         {
-            List<Triple> companyTriples = rdfWrapper.getCompanyfromDBpedia(venue);
-
-            if (companyTriples.Count >= 2)
+            try
             {
-                JObject venuesObject = venuewrapper.getVenues(venue, latitude, longtitude);
-                JToken S1 = venuesObject["response"]["venues"];
+                List<Triple> companyTriples = rdfWrapper.getCompanyfromDBpedia(venue);
 
-                //adding the company properties extracted from dbpedia to the Graph
-                foreach (Triple t in companyTriples)
+                if (companyTriples.Count >= 2)
                 {
-                    VenuesGraph.Assert(t);
+                    JObject venuesObject = venuewrapper.getVenues(venue, latitude, longtitude);
+                    JToken S1 = venuesObject["response"]["venues"];
+
+                    //adding the company properties extracted from dbpedia to the Graph
+                    foreach (Triple t in companyTriples)
+                    {
+                        VenuesGraph.Assert(t);
+                    }
+
+                    VenuesGraph = assertSpecialPropertiesToGraph(VenuesGraph, S1, Tools.CopyNode(companyTriples[1].Subject, VenuesGraph));
                 }
 
-                VenuesGraph = assertSpecialPropertiesToGraph(VenuesGraph, S1, Tools.CopyNode(companyTriples[1].Subject,VenuesGraph));
+                rdfWrapper.writeGraphIntoFile(VenuesGraph);
+                return true;
             }
+            catch
+            {
 
-            rdfWrapper.writeGraphIntoFile(VenuesGraph);
-
+                return false;
+            }
         }
 
 

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.ServiceModel.Configuration;
+using System.ServiceModel.Web;
 
 namespace foursquare2RDF
 {
@@ -13,10 +15,12 @@ namespace foursquare2RDF
     {
         // TODO: Add your service operations here
         [OperationContract]
-        void addVenuesToGraph(string venue, string near);
+        [WebGet]
+        bool addVenuesToGraph(string venue, string near);
 
         [OperationContract]
-        void addVenuesToGraphLL(string venue, float longtitude , float latitude);
+        [WebGet]
+        bool addVenuesToGraphLL(string venue, float longtitude , float latitude);
     }
 
 }
