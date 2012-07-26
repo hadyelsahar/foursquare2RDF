@@ -21,6 +21,15 @@ namespace foursquare2RDF
         [OperationContract]
         [WebGet]
         bool addVenuesToGraphLL(string venue, float longtitude , float latitude);
+
+        [OperationContract]
+        [WebGet]
+        string getStatistics();
+
+
+        [OperationContract]
+        [WebGet]
+        string getVenues(string BrandName , int limit);
     }
 
 }

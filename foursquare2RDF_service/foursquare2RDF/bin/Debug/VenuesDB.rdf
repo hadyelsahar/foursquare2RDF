@@ -1,21 +1,7 @@
-<http://dbpedia.org/resource/Nike,_Inc.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> .
-<http://dbpedia.org/resource/Nike,_Inc.> <http://www.w3.org/2000/01/rdf-schema#label> "Nike, Inc."@ca .
-<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Nike,_Inc.> .
-<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://www.w3.org/2000/01/rdf-schema#label> "Nike" .
-<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "31.0454786226809" .
-<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3595712620151" .
-<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://foursquare2rdf/ontology/checkcount> "6" .
-<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://foursquare2rdf/ontology/usercount> "3" .
-<http://foursquare2rdf.com/Venue/4e2345f922717a5245ddc46e> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://www.w3.org/2000/01/rdf-schema#label> "Clothing Store" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://purl.org/net/vocab/2004/03/label#plural> "Clothing Stores" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://purl.org/net/vocab/2004/03/label#short> "Apparel" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
 <http://dbpedia.org/resource/Gucci> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> .
 <http://dbpedia.org/resource/Gucci> <http://www.w3.org/2000/01/rdf-schema#label> "Gucci"@ca .
 <http://foursquare2rdf.com/Venue/4b745a05f964a52019d72de3> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Gucci> .
+<http://foursquare2rdf.com/Venue/4b745a05f964a52019d72de3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
 <http://foursquare2rdf.com/Venue/4b745a05f964a52019d72de3> <http://www.w3.org/2000/01/rdf-schema#label> "Gucci" .
 <http://foursquare2rdf.com/Venue/4b745a05f964a52019d72de3> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.6090266280493" .
 <http://foursquare2rdf.com/Venue/4b745a05f964a52019d72de3> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.333599537303" .
@@ -28,236 +14,387 @@
 <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d104951735> <http://purl.org/net/vocab/2004/03/label#plural> "Boutiques" .
 <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d104951735> <http://purl.org/net/vocab/2004/03/label#short> "Boutique" .
 <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d104951735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://dbpedia.org/resource/Tony_Roma's> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> .
-<http://dbpedia.org/resource/Tony_Roma's> <http://www.w3.org/2000/01/rdf-schema#label> "Tony Roma's"@en .
-<http://foursquare2rdf.com/Venue/4f353c10e4b0ba1c4800e7e1> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4f353c10e4b0ba1c4800e7e1> <http://www.w3.org/2000/01/rdf-schema#label> "Romanian Embassy Zamalek" .
-<http://foursquare2rdf.com/Venue/4f353c10e4b0ba1c4800e7e1> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0590706021774" .
-<http://foursquare2rdf.com/Venue/4f353c10e4b0ba1c4800e7e1> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.219169517554" .
-<http://foursquare2rdf.com/Venue/4f353c10e4b0ba1c4800e7e1> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4f353c10e4b0ba1c4800e7e1> <http://foursquare2rdf/ontology/checkcount> "3" .
-<http://foursquare2rdf.com/Venue/4f353c10e4b0ba1c4800e7e1> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4f353c10e4b0ba1c4800e7e1> <http://foursquare2rdf/ontology/usercount> "2" .
-<http://foursquare2rdf.com/Venue/4f353c10e4b0ba1c4800e7e1> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d126941735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d126941735> <http://www.w3.org/2000/01/rdf-schema#label> "Government Building" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d126941735> <http://purl.org/net/vocab/2004/03/label#plural> "Government Buildings" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d126941735> <http://purl.org/net/vocab/2004/03/label#short> "Government" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d126941735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4e6e3066b9932d7f63db0a85> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4e6e3066b9932d7f63db0a85> <http://www.w3.org/2000/01/rdf-schema#label> "Romantic Local Cafe" .
-<http://foursquare2rdf.com/Venue/4e6e3066b9932d7f63db0a85> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.097758" .
-<http://foursquare2rdf.com/Venue/4e6e3066b9932d7f63db0a85> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.2497269" .
-<http://foursquare2rdf.com/Venue/4e6e3066b9932d7f63db0a85> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4e6e3066b9932d7f63db0a85> <http://foursquare2rdf/ontology/checkcount> "1" .
-<http://foursquare2rdf.com/Venue/4e6e3066b9932d7f63db0a85> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4e6e3066b9932d7f63db0a85> <http://foursquare2rdf/ontology/usercount> "1" .
-<http://foursquare2rdf.com/Venue/4e6e3066b9932d7f63db0a85> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16d941735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16d941735> <http://www.w3.org/2000/01/rdf-schema#label> "Caf\u00E9" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16d941735> <http://purl.org/net/vocab/2004/03/label#plural> "Caf\u00E9s" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16d941735> <http://purl.org/net/vocab/2004/03/label#short> "Caf\u00E9" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16d941735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4daf34e204373a986f50bb4e> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4daf34e204373a986f50bb4e> <http://www.w3.org/2000/01/rdf-schema#label> "Romantic" .
-<http://foursquare2rdf.com/Venue/4daf34e204373a986f50bb4e> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.098387" .
-<http://foursquare2rdf.com/Venue/4daf34e204373a986f50bb4e> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.246427" .
-<http://foursquare2rdf.com/Venue/4daf34e204373a986f50bb4e> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4daf34e204373a986f50bb4e> <http://foursquare2rdf/ontology/checkcount> "33" .
-<http://foursquare2rdf.com/Venue/4daf34e204373a986f50bb4e> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4daf34e204373a986f50bb4e> <http://foursquare2rdf/ontology/usercount> "4" .
-<http://foursquare2rdf.com/Venue/4daf34e204373a986f50bb4e> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16d941735> .
-<http://foursquare2rdf.com/Venue/4cbb34844352a1cda27097f5> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4cbb34844352a1cda27097f5> <http://www.w3.org/2000/01/rdf-schema#label> "Pension Roma" .
-<http://foursquare2rdf.com/Venue/4cbb34844352a1cda27097f5> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.051791" .
-<http://foursquare2rdf.com/Venue/4cbb34844352a1cda27097f5> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.24448" .
-<http://foursquare2rdf.com/Venue/4cbb34844352a1cda27097f5> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4cbb34844352a1cda27097f5> <http://foursquare2rdf/ontology/checkcount> "32" .
-<http://foursquare2rdf.com/Venue/4cbb34844352a1cda27097f5> <http://foursquare2rdf/ontology/tipcount> "1" .
-<http://foursquare2rdf.com/Venue/4cbb34844352a1cda27097f5> <http://foursquare2rdf/ontology/usercount> "14" .
-<http://foursquare2rdf.com/Venue/4cbb34844352a1cda27097f5> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1ee931735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1ee931735> <http://www.w3.org/2000/01/rdf-schema#label> "Hostel" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1ee931735> <http://purl.org/net/vocab/2004/03/label#plural> "Hostels" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1ee931735> <http://purl.org/net/vocab/2004/03/label#short> "Hostel" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1ee931735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4ec92250f79041351eaacab0> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4ec92250f79041351eaacab0> <http://www.w3.org/2000/01/rdf-schema#label> "St. Joseph Roman Catholic Church" .
-<http://foursquare2rdf.com/Venue/4ec92250f79041351eaacab0> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0490244961956" .
-<http://foursquare2rdf.com/Venue/4ec92250f79041351eaacab0> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.2439331624803" .
-<http://foursquare2rdf.com/Venue/4ec92250f79041351eaacab0> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4ec92250f79041351eaacab0> <http://foursquare2rdf/ontology/checkcount> "18" .
-<http://foursquare2rdf.com/Venue/4ec92250f79041351eaacab0> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4ec92250f79041351eaacab0> <http://foursquare2rdf/ontology/usercount> "10" .
-<http://foursquare2rdf.com/Venue/4ec64e18e5fa232a73b47858> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4ec64e18e5fa232a73b47858> <http://www.w3.org/2000/01/rdf-schema#label> "Roman Cafe" .
-<http://foursquare2rdf.com/Venue/4ec64e18e5fa232a73b47858> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.088739" .
-<http://foursquare2rdf.com/Venue/4ec64e18e5fa232a73b47858> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.312998" .
-<http://foursquare2rdf.com/Venue/4ec64e18e5fa232a73b47858> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4ec64e18e5fa232a73b47858> <http://foursquare2rdf/ontology/checkcount> "6" .
-<http://foursquare2rdf.com/Venue/4ec64e18e5fa232a73b47858> <http://foursquare2rdf/ontology/tipcount> "1" .
-<http://foursquare2rdf.com/Venue/4ec64e18e5fa232a73b47858> <http://foursquare2rdf/ontology/usercount> "2" .
-<http://foursquare2rdf.com/Venue/4ec64e18e5fa232a73b47858> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d11a941735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d11a941735> <http://www.w3.org/2000/01/rdf-schema#label> "Other Nightlife" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d11a941735> <http://purl.org/net/vocab/2004/03/label#plural> "Other Nightlife" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d11a941735> <http://purl.org/net/vocab/2004/03/label#short> "Other - Nightlife" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d11a941735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4ca6fda214c33704db27c53b> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4ca6fda214c33704db27c53b> <http://www.w3.org/2000/01/rdf-schema#label> "Roma Pizza 2 Go - Buffalo Burger" .
-<http://foursquare2rdf.com/Venue/4ca6fda214c33704db27c53b> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0818506891768" .
-<http://foursquare2rdf.com/Venue/4ca6fda214c33704db27c53b> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3395094871521" .
-<http://foursquare2rdf.com/Venue/4ca6fda214c33704db27c53b> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4ca6fda214c33704db27c53b> <http://foursquare2rdf/ontology/checkcount> "144" .
-<http://foursquare2rdf.com/Venue/4ca6fda214c33704db27c53b> <http://foursquare2rdf/ontology/tipcount> "7" .
-<http://foursquare2rdf.com/Venue/4ca6fda214c33704db27c53b> <http://foursquare2rdf/ontology/usercount> "48" .
-<http://foursquare2rdf.com/Venue/4ca6fda214c33704db27c53b> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1ca941735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1ca941735> <http://www.w3.org/2000/01/rdf-schema#label> "Pizza Place" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1ca941735> <http://purl.org/net/vocab/2004/03/label#plural> "Pizza Places" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1ca941735> <http://purl.org/net/vocab/2004/03/label#short> "Pizza" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1ca941735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4c6ef017fa49a1cd6876a1e3> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4c6ef017fa49a1cd6876a1e3> <http://www.w3.org/2000/01/rdf-schema#label> "Roma cafe" .
-<http://foursquare2rdf.com/Venue/4c6ef017fa49a1cd6876a1e3> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0878424846026" .
-<http://foursquare2rdf.com/Venue/4c6ef017fa49a1cd6876a1e3> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3413384285183" .
-<http://foursquare2rdf.com/Venue/4c6ef017fa49a1cd6876a1e3> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4c6ef017fa49a1cd6876a1e3> <http://foursquare2rdf/ontology/checkcount> "187" .
-<http://foursquare2rdf.com/Venue/4c6ef017fa49a1cd6876a1e3> <http://foursquare2rdf/ontology/tipcount> "2" .
-<http://foursquare2rdf.com/Venue/4c6ef017fa49a1cd6876a1e3> <http://foursquare2rdf/ontology/usercount> "71" .
-<http://foursquare2rdf.com/Venue/4c6ef017fa49a1cd6876a1e3> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16d941735> .
-<http://foursquare2rdf.com/Venue/4f00a4000aaffcf6f5298384> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4f00a4000aaffcf6f5298384> <http://www.w3.org/2000/01/rdf-schema#label> "Romany Pharmacy" .
-<http://foursquare2rdf.com/Venue/4f00a4000aaffcf6f5298384> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0909208457054" .
-<http://foursquare2rdf.com/Venue/4f00a4000aaffcf6f5298384> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3312965894676" .
-<http://foursquare2rdf.com/Venue/4f00a4000aaffcf6f5298384> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4f00a4000aaffcf6f5298384> <http://foursquare2rdf/ontology/checkcount> "9" .
-<http://foursquare2rdf.com/Venue/4f00a4000aaffcf6f5298384> <http://foursquare2rdf/ontology/tipcount> "1" .
-<http://foursquare2rdf.com/Venue/4f00a4000aaffcf6f5298384> <http://foursquare2rdf/ontology/usercount> "5" .
-<http://foursquare2rdf.com/Venue/4f00a4000aaffcf6f5298384> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d10f951735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d10f951735> <http://www.w3.org/2000/01/rdf-schema#label> "Drugstore / Pharmacy" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d10f951735> <http://purl.org/net/vocab/2004/03/label#plural> "Drugstores / Pharmacies" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d10f951735> <http://purl.org/net/vocab/2004/03/label#short> "Pharmacy" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d10f951735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4be95c2a947820a10de2b5db> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4be95c2a947820a10de2b5db> <http://www.w3.org/2000/01/rdf-schema#label> "Romano's Macaroni Grill" .
-<http://foursquare2rdf.com/Venue/4be95c2a947820a10de2b5db> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0739665960899" .
-<http://foursquare2rdf.com/Venue/4be95c2a947820a10de2b5db> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3446893692017" .
-<http://foursquare2rdf.com/Venue/4be95c2a947820a10de2b5db> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4be95c2a947820a10de2b5db> <http://foursquare2rdf/ontology/checkcount> "80" .
-<http://foursquare2rdf.com/Venue/4be95c2a947820a10de2b5db> <http://foursquare2rdf/ontology/tipcount> "3" .
-<http://foursquare2rdf.com/Venue/4be95c2a947820a10de2b5db> <http://foursquare2rdf/ontology/usercount> "57" .
-<http://foursquare2rdf.com/Venue/4be95c2a947820a10de2b5db> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d110941735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d110941735> <http://www.w3.org/2000/01/rdf-schema#label> "Italian Restaurant" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d110941735> <http://purl.org/net/vocab/2004/03/label#plural> "Italian Restaurants" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d110941735> <http://purl.org/net/vocab/2004/03/label#short> "Italian" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d110941735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4d08a17bcda2548168f92d65> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4d08a17bcda2548168f92d65> <http://www.w3.org/2000/01/rdf-schema#label> "Romanos Macaroni Grill" .
-<http://foursquare2rdf.com/Venue/4d08a17bcda2548168f92d65> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0731106081642" .
-<http://foursquare2rdf.com/Venue/4d08a17bcda2548168f92d65> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3447841776884" .
-<http://foursquare2rdf.com/Venue/4d08a17bcda2548168f92d65> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4d08a17bcda2548168f92d65> <http://foursquare2rdf/ontology/checkcount> "22" .
-<http://foursquare2rdf.com/Venue/4d08a17bcda2548168f92d65> <http://foursquare2rdf/ontology/tipcount> "4" .
-<http://foursquare2rdf.com/Venue/4d08a17bcda2548168f92d65> <http://foursquare2rdf/ontology/usercount> "20" .
-<http://foursquare2rdf.com/Venue/4d08a17bcda2548168f92d65> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d110941735> .
-<http://foursquare2rdf.com/Venue/4eb29a19f5b9448388677d02> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4eb29a19f5b9448388677d02> <http://www.w3.org/2000/01/rdf-schema#label> "Roma Exchange" .
-<http://foursquare2rdf.com/Venue/4eb29a19f5b9448388677d02> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.099248744265" .
-<http://foursquare2rdf.com/Venue/4eb29a19f5b9448388677d02> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3345136463125" .
-<http://foursquare2rdf.com/Venue/4eb29a19f5b9448388677d02> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4eb29a19f5b9448388677d02> <http://foursquare2rdf/ontology/checkcount> "4" .
-<http://foursquare2rdf.com/Venue/4eb29a19f5b9448388677d02> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4eb29a19f5b9448388677d02> <http://foursquare2rdf/ontology/usercount> "3" .
-<http://foursquare2rdf.com/Venue/4eb29a19f5b9448388677d02> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d10a951735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d10a951735> <http://www.w3.org/2000/01/rdf-schema#label> "Bank" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d10a951735> <http://purl.org/net/vocab/2004/03/label#plural> "Banks" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d10a951735> <http://purl.org/net/vocab/2004/03/label#short> "Bank / Financial" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d10a951735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4f4cb73ee4b081be1c607c5b> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4f4cb73ee4b081be1c607c5b> <http://www.w3.org/2000/01/rdf-schema#label> "Romantic Cafe" .
-<http://foursquare2rdf.com/Venue/4f4cb73ee4b081be1c607c5b> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "29.9724511459308" .
-<http://foursquare2rdf.com/Venue/4f4cb73ee4b081be1c607c5b> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.2775374413048" .
-<http://foursquare2rdf.com/Venue/4f4cb73ee4b081be1c607c5b> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4f4cb73ee4b081be1c607c5b> <http://foursquare2rdf/ontology/checkcount> "9" .
-<http://foursquare2rdf.com/Venue/4f4cb73ee4b081be1c607c5b> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4f4cb73ee4b081be1c607c5b> <http://foursquare2rdf/ontology/usercount> "5" .
-<http://foursquare2rdf.com/Venue/4f4cb73ee4b081be1c607c5b> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16d941735> .
-<http://foursquare2rdf.com/Venue/4ce2f20e57d9b60c224f9cb5> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4ce2f20e57d9b60c224f9cb5> <http://www.w3.org/2000/01/rdf-schema#label> "Romantic" .
-<http://foursquare2rdf.com/Venue/4ce2f20e57d9b60c224f9cb5> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.1055239" .
-<http://foursquare2rdf.com/Venue/4ce2f20e57d9b60c224f9cb5> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.38304166" .
-<http://foursquare2rdf.com/Venue/4ce2f20e57d9b60c224f9cb5> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4ce2f20e57d9b60c224f9cb5> <http://foursquare2rdf/ontology/checkcount> "203" .
-<http://foursquare2rdf.com/Venue/4ce2f20e57d9b60c224f9cb5> <http://foursquare2rdf/ontology/tipcount> "7" .
-<http://foursquare2rdf.com/Venue/4ce2f20e57d9b60c224f9cb5> <http://foursquare2rdf/ontology/usercount> "83" .
-<http://foursquare2rdf.com/Venue/4ce2f20e57d9b60c224f9cb5> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e0931735> .
+<http://dbpedia.org/resource/Nike,_Inc.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> .
+<http://dbpedia.org/resource/Nike,_Inc.> <http://www.w3.org/2000/01/rdf-schema#label> "Nike, Inc."@ca .
+<http://foursquare2rdf.com/Venue/4baab299f964a520ba803ae3> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Nike,_Inc.> .
+<http://foursquare2rdf.com/Venue/4baab299f964a520ba803ae3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4baab299f964a520ba803ae3> <http://www.w3.org/2000/01/rdf-schema#label> "Nike Park" .
+<http://foursquare2rdf.com/Venue/4baab299f964a520ba803ae3> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.6837762104669" .
+<http://foursquare2rdf.com/Venue/4baab299f964a520ba803ae3> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.109924349806" .
+<http://foursquare2rdf.com/Venue/4baab299f964a520ba803ae3> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4baab299f964a520ba803ae3> <http://foursquare2rdf/ontology/checkcount> "267" .
+<http://foursquare2rdf.com/Venue/4baab299f964a520ba803ae3> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4baab299f964a520ba803ae3> <http://foursquare2rdf/ontology/usercount> "36" .
+<http://foursquare2rdf.com/Venue/4baab299f964a520ba803ae3> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e7941735> .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e7941735> <http://www.w3.org/2000/01/rdf-schema#label> "Playground" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e7941735> <http://purl.org/net/vocab/2004/03/label#plural> "Playgrounds" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e7941735> <http://purl.org/net/vocab/2004/03/label#short> "Playground" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e7941735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
+<http://foursquare2rdf.com/Venue/500c59b0e4b0fec2ce240bf3> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Nike,_Inc.> .
+<http://foursquare2rdf.com/Venue/500c59b0e4b0fec2ce240bf3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/500c59b0e4b0fec2ce240bf3> <http://www.w3.org/2000/01/rdf-schema#label> "nike crossfire challenge" .
+<http://foursquare2rdf.com/Venue/500c59b0e4b0fec2ce240bf3> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.7046" .
+<http://foursquare2rdf.com/Venue/500c59b0e4b0fec2ce240bf3> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.1397" .
+<http://foursquare2rdf.com/Venue/500c59b0e4b0fec2ce240bf3> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/500c59b0e4b0fec2ce240bf3> <http://foursquare2rdf/ontology/checkcount> "2" .
+<http://foursquare2rdf.com/Venue/500c59b0e4b0fec2ce240bf3> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/500c59b0e4b0fec2ce240bf3> <http://foursquare2rdf/ontology/usercount> "1" .
+<http://foursquare2rdf.com/Venue/500c59b0e4b0fec2ce240bf3> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4f4528bc4b90abdf24c9de85> .
+<http://foursquare2rdf.com/VenueCategory/4f4528bc4b90abdf24c9de85> <http://www.w3.org/2000/01/rdf-schema#label> "Sport" .
+<http://foursquare2rdf.com/VenueCategory/4f4528bc4b90abdf24c9de85> <http://purl.org/net/vocab/2004/03/label#plural> "Sports" .
+<http://foursquare2rdf.com/VenueCategory/4f4528bc4b90abdf24c9de85> <http://purl.org/net/vocab/2004/03/label#short> "Sport" .
+<http://foursquare2rdf.com/VenueCategory/4f4528bc4b90abdf24c9de85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
+<http://foursquare2rdf.com/Venue/4a9c3733f964a5207c3620e3> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Nike,_Inc.> .
+<http://foursquare2rdf.com/Venue/4a9c3733f964a5207c3620e3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4a9c3733f964a5207c3620e3> <http://www.w3.org/2000/01/rdf-schema#label> "Niketown" .
+<http://foursquare2rdf.com/Venue/4a9c3733f964a5207c3620e3> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.6112704086178" .
+<http://foursquare2rdf.com/Venue/4a9c3733f964a5207c3620e3> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.3345878573" .
+<http://foursquare2rdf.com/Venue/4a9c3733f964a5207c3620e3> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4a9c3733f964a5207c3620e3> <http://foursquare2rdf/ontology/checkcount> "2864" .
+<http://foursquare2rdf.com/Venue/4a9c3733f964a5207c3620e3> <http://foursquare2rdf/ontology/tipcount> "7" .
+<http://foursquare2rdf.com/Venue/4a9c3733f964a5207c3620e3> <http://foursquare2rdf/ontology/usercount> "1787" .
+<http://foursquare2rdf.com/Venue/4a9c3733f964a5207c3620e3> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d107951735> .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d107951735> <http://www.w3.org/2000/01/rdf-schema#label> "Shoe Store" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d107951735> <http://purl.org/net/vocab/2004/03/label#plural> "Shoe Stores" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d107951735> <http://purl.org/net/vocab/2004/03/label#short> "Shoes" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d107951735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
+<http://foursquare2rdf.com/Venue/4c79a5983badb1f7f9ef4f54> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Nike,_Inc.> .
+<http://foursquare2rdf.com/Venue/4c79a5983badb1f7f9ef4f54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4c79a5983badb1f7f9ef4f54> <http://www.w3.org/2000/01/rdf-schema#label> "Cougar Mountain Nike Missle Site" .
+<http://foursquare2rdf.com/Venue/4c79a5983badb1f7f9ef4f54> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.5910064013605" .
+<http://foursquare2rdf.com/Venue/4c79a5983badb1f7f9ef4f54> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.126251177508" .
+<http://foursquare2rdf.com/Venue/4c79a5983badb1f7f9ef4f54> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4c79a5983badb1f7f9ef4f54> <http://foursquare2rdf/ontology/checkcount> "2" .
+<http://foursquare2rdf.com/Venue/4c79a5983badb1f7f9ef4f54> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4c79a5983badb1f7f9ef4f54> <http://foursquare2rdf/ontology/usercount> "2" .
+<http://foursquare2rdf.com/Venue/4ffa0b5fe4b0f1c619c60684> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Nike,_Inc.> .
+<http://foursquare2rdf.com/Venue/4ffa0b5fe4b0f1c619c60684> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4ffa0b5fe4b0f1c619c60684> <http://www.w3.org/2000/01/rdf-schema#label> "nike hills" .
+<http://foursquare2rdf.com/Venue/4ffa0b5fe4b0f1c619c60684> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.7913398742676" .
+<http://foursquare2rdf.com/Venue/4ffa0b5fe4b0f1c619c60684> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.219879150391" .
+<http://foursquare2rdf.com/Venue/4ffa0b5fe4b0f1c619c60684> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4ffa0b5fe4b0f1c619c60684> <http://foursquare2rdf/ontology/checkcount> "2" .
+<http://foursquare2rdf.com/Venue/4ffa0b5fe4b0f1c619c60684> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4ffa0b5fe4b0f1c619c60684> <http://foursquare2rdf/ontology/usercount> "1" .
+<http://foursquare2rdf.com/Venue/4ffa0b5fe4b0f1c619c60684> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4f2a23984b9023bd5841ed2c> .
+<http://foursquare2rdf.com/VenueCategory/4f2a23984b9023bd5841ed2c> <http://www.w3.org/2000/01/rdf-schema#label> "Moving Target" .
+<http://foursquare2rdf.com/VenueCategory/4f2a23984b9023bd5841ed2c> <http://purl.org/net/vocab/2004/03/label#plural> "Moving Targets" .
+<http://foursquare2rdf.com/VenueCategory/4f2a23984b9023bd5841ed2c> <http://purl.org/net/vocab/2004/03/label#short> "Moving Target" .
+<http://foursquare2rdf.com/VenueCategory/4f2a23984b9023bd5841ed2c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
+<http://foursquare2rdf.com/Venue/4fcaae8ce4b0ca83a3d6ded0> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Nike,_Inc.> .
+<http://foursquare2rdf.com/Venue/4fcaae8ce4b0ca83a3d6ded0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4fcaae8ce4b0ca83a3d6ded0> <http://www.w3.org/2000/01/rdf-schema#label> "Nike Missle Site on Cougar Mountain" .
+<http://foursquare2rdf.com/Venue/4fcaae8ce4b0ca83a3d6ded0> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.531651" .
+<http://foursquare2rdf.com/Venue/4fcaae8ce4b0ca83a3d6ded0> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.112955" .
+<http://foursquare2rdf.com/Venue/4fcaae8ce4b0ca83a3d6ded0> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4fcaae8ce4b0ca83a3d6ded0> <http://foursquare2rdf/ontology/checkcount> "1" .
+<http://foursquare2rdf.com/Venue/4fcaae8ce4b0ca83a3d6ded0> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4fcaae8ce4b0ca83a3d6ded0> <http://foursquare2rdf/ontology/usercount> "1" .
+<http://foursquare2rdf.com/Venue/4fcaae8ce4b0ca83a3d6ded0> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d163941735> .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d163941735> <http://www.w3.org/2000/01/rdf-schema#label> "Park" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d163941735> <http://purl.org/net/vocab/2004/03/label#plural> "Parks" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d163941735> <http://purl.org/net/vocab/2004/03/label#short> "Park" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d163941735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
+<http://foursquare2rdf.com/Venue/4b81d0a1f964a52088bf30e3> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Nike,_Inc.> .
+<http://foursquare2rdf.com/Venue/4b81d0a1f964a52088bf30e3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4b81d0a1f964a52088bf30e3> <http://www.w3.org/2000/01/rdf-schema#label> "Nike Factory Store" .
+<http://foursquare2rdf.com/Venue/4b81d0a1f964a52088bf30e3> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.4896734705824" .
+<http://foursquare2rdf.com/Venue/4b81d0a1f964a52088bf30e3> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-121.79552257061" .
+<http://foursquare2rdf.com/Venue/4b81d0a1f964a52088bf30e3> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4b81d0a1f964a52088bf30e3> <http://foursquare2rdf/ontology/checkcount> "743" .
+<http://foursquare2rdf.com/Venue/4b81d0a1f964a52088bf30e3> <http://foursquare2rdf/ontology/tipcount> "1" .
+<http://foursquare2rdf.com/Venue/4b81d0a1f964a52088bf30e3> <http://foursquare2rdf/ontology/usercount> "507" .
+<http://foursquare2rdf.com/Venue/4b81d0a1f964a52088bf30e3> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> <http://www.w3.org/2000/01/rdf-schema#label> "Sporting Goods Shop" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> <http://purl.org/net/vocab/2004/03/label#plural> "Sporting Goods Shops" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> <http://purl.org/net/vocab/2004/03/label#short> "Sporting Goods" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
+<http://foursquare2rdf.com/Venue/4f4823efe4b0683d4f3b7a55> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Nike,_Inc.> .
+<http://foursquare2rdf.com/Venue/4f4823efe4b0683d4f3b7a55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4f4823efe4b0683d4f3b7a55> <http://www.w3.org/2000/01/rdf-schema#label> "Nike" .
+<http://foursquare2rdf.com/Venue/4f4823efe4b0683d4f3b7a55> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.4121611590396" .
+<http://foursquare2rdf.com/Venue/4f4823efe4b0683d4f3b7a55> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-121.581498644466" .
+<http://foursquare2rdf.com/Venue/4f4823efe4b0683d4f3b7a55> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4f4823efe4b0683d4f3b7a55> <http://foursquare2rdf/ontology/checkcount> "1" .
+<http://foursquare2rdf.com/Venue/4f4823efe4b0683d4f3b7a55> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4f4823efe4b0683d4f3b7a55> <http://foursquare2rdf/ontology/usercount> "1" .
+<http://foursquare2rdf.com/Venue/4f4823efe4b0683d4f3b7a55> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://dbpedia.org/resource/Air_Cairo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> .
+<http://dbpedia.org/resource/Air_Cairo> <http://www.w3.org/2000/01/rdf-schema#label> "Air Cairo"@de .
+<http://foursquare2rdf.com/Venue/4c259b36c11dc9b6ea9e2724> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Air_Cairo> .
+<http://foursquare2rdf.com/Venue/4c259b36c11dc9b6ea9e2724> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4c259b36c11dc9b6ea9e2724> <http://www.w3.org/2000/01/rdf-schema#label> "Cairo" .
+<http://foursquare2rdf.com/Venue/4c259b36c11dc9b6ea9e2724> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.624317" .
+<http://foursquare2rdf.com/Venue/4c259b36c11dc9b6ea9e2724> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.325027" .
+<http://foursquare2rdf.com/Venue/4c259b36c11dc9b6ea9e2724> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4c259b36c11dc9b6ea9e2724> <http://foursquare2rdf/ontology/checkcount> "77" .
+<http://foursquare2rdf.com/Venue/4c259b36c11dc9b6ea9e2724> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4c259b36c11dc9b6ea9e2724> <http://foursquare2rdf/ontology/usercount> "59" .
+<http://foursquare2rdf.com/Venue/4bd3cd7541b9ef3b311a01e6> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Air_Cairo> .
+<http://foursquare2rdf.com/Venue/4bd3cd7541b9ef3b311a01e6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4bd3cd7541b9ef3b311a01e6> <http://www.w3.org/2000/01/rdf-schema#label> "Cairo" .
+<http://foursquare2rdf.com/Venue/4bd3cd7541b9ef3b311a01e6> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.6242679357529" .
+<http://foursquare2rdf.com/Venue/4bd3cd7541b9ef3b311a01e6> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.324872612953" .
+<http://foursquare2rdf.com/Venue/4bd3cd7541b9ef3b311a01e6> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4bd3cd7541b9ef3b311a01e6> <http://foursquare2rdf/ontology/checkcount> "14" .
+<http://foursquare2rdf.com/Venue/4bd3cd7541b9ef3b311a01e6> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4bd3cd7541b9ef3b311a01e6> <http://foursquare2rdf/ontology/usercount> "14" .
+<http://foursquare2rdf.com/Venue/4bd3cd7541b9ef3b311a01e6> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e2931735> .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e2931735> <http://www.w3.org/2000/01/rdf-schema#label> "Art Gallery" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e2931735> <http://purl.org/net/vocab/2004/03/label#plural> "Art Galleries" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e2931735> <http://purl.org/net/vocab/2004/03/label#short> "Art Gallery" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e2931735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
+<http://foursquare2rdf.com/Venue/4e5059ebe4cdc76dc9bf5411> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Air_Cairo> .
+<http://foursquare2rdf.com/Venue/4e5059ebe4cdc76dc9bf5411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4e5059ebe4cdc76dc9bf5411> <http://www.w3.org/2000/01/rdf-schema#label> "cairo Seattle Vibrations Festival" .
+<http://foursquare2rdf.com/Venue/4e5059ebe4cdc76dc9bf5411> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.63281168" .
+<http://foursquare2rdf.com/Venue/4e5059ebe4cdc76dc9bf5411> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.32010388" .
+<http://foursquare2rdf.com/Venue/4e5059ebe4cdc76dc9bf5411> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4e5059ebe4cdc76dc9bf5411> <http://foursquare2rdf/ontology/checkcount> "7" .
+<http://foursquare2rdf.com/Venue/4e5059ebe4cdc76dc9bf5411> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4e5059ebe4cdc76dc9bf5411> <http://foursquare2rdf/ontology/usercount> "7" .
+<http://foursquare2rdf.com/Venue/4e5059ebe4cdc76dc9bf5411> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e5931735> .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e5931735> <http://www.w3.org/2000/01/rdf-schema#label> "Music Venue" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e5931735> <http://purl.org/net/vocab/2004/03/label#plural> "Music Venues" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e5931735> <http://purl.org/net/vocab/2004/03/label#short> "Music Venue" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e5931735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
+<http://foursquare2rdf.com/Venue/4b076983f964a5204afd22e3> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Air_Cairo> .
+<http://foursquare2rdf.com/Venue/4b076983f964a5204afd22e3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4b076983f964a5204afd22e3> <http://www.w3.org/2000/01/rdf-schema#label> "Cairo Collection" .
+<http://foursquare2rdf.com/Venue/4b076983f964a5204afd22e3> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.62446" .
+<http://foursquare2rdf.com/Venue/4b076983f964a5204afd22e3> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.32539" .
+<http://foursquare2rdf.com/Venue/4b076983f964a5204afd22e3> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4b076983f964a5204afd22e3> <http://foursquare2rdf/ontology/checkcount> "15" .
+<http://foursquare2rdf.com/Venue/4b076983f964a5204afd22e3> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4b076983f964a5204afd22e3> <http://foursquare2rdf/ontology/usercount> "13" .
+<http://foursquare2rdf.com/Venue/4e5ab1d1d4c0ba8c11af1b48> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Air_Cairo> .
+<http://foursquare2rdf.com/Venue/4e5ab1d1d4c0ba8c11af1b48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4e5ab1d1d4c0ba8c11af1b48> <http://www.w3.org/2000/01/rdf-schema#label> "Cafe Cairo" .
+<http://foursquare2rdf.com/Venue/4e5ab1d1d4c0ba8c11af1b48> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "47.6151166" .
+<http://foursquare2rdf.com/Venue/4e5ab1d1d4c0ba8c11af1b48> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "-122.32134018" .
+<http://foursquare2rdf.com/Venue/4e5ab1d1d4c0ba8c11af1b48> <http://dbpedia.org/property/locationCountry> "United States" .
+<http://foursquare2rdf.com/Venue/4e5ab1d1d4c0ba8c11af1b48> <http://foursquare2rdf/ontology/checkcount> "3" .
+<http://foursquare2rdf.com/Venue/4e5ab1d1d4c0ba8c11af1b48> <http://foursquare2rdf/ontology/tipcount> "1" .
+<http://foursquare2rdf.com/Venue/4e5ab1d1d4c0ba8c11af1b48> <http://foursquare2rdf/ontology/usercount> "3" .
+<http://foursquare2rdf.com/Venue/4e5ab1d1d4c0ba8c11af1b48> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e0931735> .
 <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e0931735> <http://www.w3.org/2000/01/rdf-schema#label> "Coffee Shop" .
 <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e0931735> <http://purl.org/net/vocab/2004/03/label#plural> "Coffee Shops" .
 <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e0931735> <http://purl.org/net/vocab/2004/03/label#short> "Coffee Shop" .
 <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e0931735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4c91482aae45224bd77be697> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4c91482aae45224bd77be697> <http://www.w3.org/2000/01/rdf-schema#label> "Gelateria Roma" .
-<http://foursquare2rdf.com/Venue/4c91482aae45224bd77be697> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0877828413811" .
-<http://foursquare2rdf.com/Venue/4c91482aae45224bd77be697> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3415586948395" .
-<http://foursquare2rdf.com/Venue/4c91482aae45224bd77be697> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4c91482aae45224bd77be697> <http://foursquare2rdf/ontology/checkcount> "143" .
-<http://foursquare2rdf.com/Venue/4c91482aae45224bd77be697> <http://foursquare2rdf/ontology/tipcount> "3" .
-<http://foursquare2rdf.com/Venue/4c91482aae45224bd77be697> <http://foursquare2rdf/ontology/usercount> "73" .
-<http://foursquare2rdf.com/Venue/4c91482aae45224bd77be697> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1c9941735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1c9941735> <http://www.w3.org/2000/01/rdf-schema#label> "Ice Cream Shop" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1c9941735> <http://purl.org/net/vocab/2004/03/label#plural> "Ice Cream Shops" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1c9941735> <http://purl.org/net/vocab/2004/03/label#short> "Ice Cream" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1c9941735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4eb6f3c5cc2143e828a276d0> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4eb6f3c5cc2143e828a276d0> <http://www.w3.org/2000/01/rdf-schema#label> "Caf\u00E9 Roma" .
-<http://foursquare2rdf.com/Venue/4eb6f3c5cc2143e828a276d0> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0877033400078" .
-<http://foursquare2rdf.com/Venue/4eb6f3c5cc2143e828a276d0> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3422152333331" .
-<http://foursquare2rdf.com/Venue/4eb6f3c5cc2143e828a276d0> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4eb6f3c5cc2143e828a276d0> <http://foursquare2rdf/ontology/checkcount> "6" .
-<http://foursquare2rdf.com/Venue/4eb6f3c5cc2143e828a276d0> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4eb6f3c5cc2143e828a276d0> <http://foursquare2rdf/ontology/usercount> "4" .
-<http://foursquare2rdf.com/Venue/4eb6f3c5cc2143e828a276d0> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16d941735> .
-<http://foursquare2rdf.com/Venue/4fc8f4ace4b0686cf759e2d9> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4fc8f4ace4b0686cf759e2d9> <http://www.w3.org/2000/01/rdf-schema#label> "Gelateria roma" .
-<http://foursquare2rdf.com/Venue/4fc8f4ace4b0686cf759e2d9> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.07385" .
-<http://foursquare2rdf.com/Venue/4fc8f4ace4b0686cf759e2d9> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.34559" .
-<http://foursquare2rdf.com/Venue/4fc8f4ace4b0686cf759e2d9> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4fc8f4ace4b0686cf759e2d9> <http://foursquare2rdf/ontology/checkcount> "3" .
-<http://foursquare2rdf.com/Venue/4fc8f4ace4b0686cf759e2d9> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4fc8f4ace4b0686cf759e2d9> <http://foursquare2rdf/ontology/usercount> "3" .
-<http://foursquare2rdf.com/Venue/4f835ebde4b06fee76d7d199> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4f835ebde4b06fee76d7d199> <http://www.w3.org/2000/01/rdf-schema#label> "Roma Pizza 2 go - Buffalo Burger" .
-<http://foursquare2rdf.com/Venue/4f835ebde4b06fee76d7d199> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0173834222651" .
-<http://foursquare2rdf.com/Venue/4f835ebde4b06fee76d7d199> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.4117689455245" .
-<http://foursquare2rdf.com/Venue/4f835ebde4b06fee76d7d199> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4f835ebde4b06fee76d7d199> <http://foursquare2rdf/ontology/checkcount> "4" .
-<http://foursquare2rdf.com/Venue/4f835ebde4b06fee76d7d199> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4f835ebde4b06fee76d7d199> <http://foursquare2rdf/ontology/usercount> "4" .
-<http://foursquare2rdf.com/Venue/4f835ebde4b06fee76d7d199> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16c941735> .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16c941735> <http://www.w3.org/2000/01/rdf-schema#label> "Burger Joint" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16c941735> <http://purl.org/net/vocab/2004/03/label#plural> "Burger Joints" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16c941735> <http://purl.org/net/vocab/2004/03/label#short> "Burgers" .
-<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16c941735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
-<http://foursquare2rdf.com/Venue/4dd693e87d8b322663da298c> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4dd693e87d8b322663da298c> <http://www.w3.org/2000/01/rdf-schema#label> "IL CAFFE DI ROMA - LAVAZZA" .
-<http://foursquare2rdf.com/Venue/4dd693e87d8b322663da298c> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.01694020121" .
-<http://foursquare2rdf.com/Venue/4dd693e87d8b322663da298c> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.4130024251976" .
-<http://foursquare2rdf.com/Venue/4dd693e87d8b322663da298c> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4dd693e87d8b322663da298c> <http://foursquare2rdf/ontology/checkcount> "148" .
-<http://foursquare2rdf.com/Venue/4dd693e87d8b322663da298c> <http://foursquare2rdf/ontology/tipcount> "2" .
-<http://foursquare2rdf.com/Venue/4dd693e87d8b322663da298c> <http://foursquare2rdf/ontology/usercount> "38" .
-<http://foursquare2rdf.com/Venue/4dd693e87d8b322663da298c> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d16d941735> .
-<http://foursquare2rdf.com/Venue/4e86f42430f80c7d3c505a6e> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4e86f42430f80c7d3c505a6e> <http://www.w3.org/2000/01/rdf-schema#label> "Roma Way" .
-<http://foursquare2rdf.com/Venue/4e86f42430f80c7d3c505a6e> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "29.9988440351343" .
-<http://foursquare2rdf.com/Venue/4e86f42430f80c7d3c505a6e> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "30.9665606402969" .
-<http://foursquare2rdf.com/Venue/4e86f42430f80c7d3c505a6e> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4e86f42430f80c7d3c505a6e> <http://foursquare2rdf/ontology/checkcount> "9" .
-<http://foursquare2rdf.com/Venue/4e86f42430f80c7d3c505a6e> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4e86f42430f80c7d3c505a6e> <http://foursquare2rdf/ontology/usercount> "8" .
-<http://foursquare2rdf.com/Venue/4e86f42430f80c7d3c505a6e> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d110941735> .
-<http://foursquare2rdf.com/Venue/4fc12cdde4b021b6dfc0380f> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Tony_Roma's> .
-<http://foursquare2rdf.com/Venue/4fc12cdde4b021b6dfc0380f> <http://www.w3.org/2000/01/rdf-schema#label> "Il Cafe Di Roma" .
-<http://foursquare2rdf.com/Venue/4fc12cdde4b021b6dfc0380f> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.020977" .
-<http://foursquare2rdf.com/Venue/4fc12cdde4b021b6dfc0380f> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.003333" .
-<http://foursquare2rdf.com/Venue/4fc12cdde4b021b6dfc0380f> <http://dbpedia.org/property/locationCountry> "Egypt" .
-<http://foursquare2rdf.com/Venue/4fc12cdde4b021b6dfc0380f> <http://foursquare2rdf/ontology/checkcount> "8" .
-<http://foursquare2rdf.com/Venue/4fc12cdde4b021b6dfc0380f> <http://foursquare2rdf/ontology/tipcount> "0" .
-<http://foursquare2rdf.com/Venue/4fc12cdde4b021b6dfc0380f> <http://foursquare2rdf/ontology/usercount> "6" .
-<http://foursquare2rdf.com/Venue/4fc12cdde4b021b6dfc0380f> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1e0931735> .
+<http://dbpedia.org/resource/Adidas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company> .
+<http://dbpedia.org/resource/Adidas> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas"@ca .
+<http://foursquare2rdf.com/Venue/4f625163e4b0233fb419182f> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4f625163e4b0233fb419182f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4f625163e4b0233fb419182f> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4f625163e4b0233fb419182f> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.052428" .
+<http://foursquare2rdf.com/Venue/4f625163e4b0233fb419182f> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.241419" .
+<http://foursquare2rdf.com/Venue/4f625163e4b0233fb419182f> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4f625163e4b0233fb419182f> <http://foursquare2rdf/ontology/checkcount> "0" .
+<http://foursquare2rdf.com/Venue/4f625163e4b0233fb419182f> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4f625163e4b0233fb419182f> <http://foursquare2rdf/ontology/usercount> "0" .
+<http://foursquare2rdf.com/Venue/4d9f1bd335a9224b3de54385> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4d9f1bd335a9224b3de54385> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4d9f1bd335a9224b3de54385> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4d9f1bd335a9224b3de54385> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.062429" .
+<http://foursquare2rdf.com/Venue/4d9f1bd335a9224b3de54385> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.223893" .
+<http://foursquare2rdf.com/Venue/4d9f1bd335a9224b3de54385> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4d9f1bd335a9224b3de54385> <http://foursquare2rdf/ontology/checkcount> "2" .
+<http://foursquare2rdf.com/Venue/4d9f1bd335a9224b3de54385> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4d9f1bd335a9224b3de54385> <http://foursquare2rdf/ontology/usercount> "2" .
+<http://foursquare2rdf.com/Venue/4f6f7261e4b02a6d69cb5be6> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4f6f7261e4b02a6d69cb5be6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4f6f7261e4b02a6d69cb5be6> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4f6f7261e4b02a6d69cb5be6> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0581415619341" .
+<http://foursquare2rdf.com/Venue/4f6f7261e4b02a6d69cb5be6> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.2051139816658" .
+<http://foursquare2rdf.com/Venue/4f6f7261e4b02a6d69cb5be6> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4f6f7261e4b02a6d69cb5be6> <http://foursquare2rdf/ontology/checkcount> "1" .
+<http://foursquare2rdf.com/Venue/4f6f7261e4b02a6d69cb5be6> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4f6f7261e4b02a6d69cb5be6> <http://foursquare2rdf/ontology/usercount> "1" .
+<http://foursquare2rdf.com/Venue/4f6f7261e4b02a6d69cb5be6> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/Venue/4e83618e6c25e5d40ba6c61a> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4e83618e6c25e5d40ba6c61a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4e83618e6c25e5d40ba6c61a> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4e83618e6c25e5d40ba6c61a> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0527916829397" .
+<http://foursquare2rdf.com/Venue/4e83618e6c25e5d40ba6c61a> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.1984098986534" .
+<http://foursquare2rdf.com/Venue/4e83618e6c25e5d40ba6c61a> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4e83618e6c25e5d40ba6c61a> <http://foursquare2rdf/ontology/checkcount> "11" .
+<http://foursquare2rdf.com/Venue/4e83618e6c25e5d40ba6c61a> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4e83618e6c25e5d40ba6c61a> <http://foursquare2rdf/ontology/usercount> "8" .
+<http://foursquare2rdf.com/Venue/4e83618e6c25e5d40ba6c61a> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/Venue/4e772a1ee4cd3254380e907e> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4e772a1ee4cd3254380e907e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4e772a1ee4cd3254380e907e> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4e772a1ee4cd3254380e907e> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0569797595921" .
+<http://foursquare2rdf.com/Venue/4e772a1ee4cd3254380e907e> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.1963857390089" .
+<http://foursquare2rdf.com/Venue/4e772a1ee4cd3254380e907e> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4e772a1ee4cd3254380e907e> <http://foursquare2rdf/ontology/checkcount> "4" .
+<http://foursquare2rdf.com/Venue/4e772a1ee4cd3254380e907e> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4e772a1ee4cd3254380e907e> <http://foursquare2rdf/ontology/usercount> "4" .
+<http://foursquare2rdf.com/Venue/4e772a1ee4cd3254380e907e> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/Venue/4ef739c1722e34060f1f8b1c> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4ef739c1722e34060f1f8b1c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4ef739c1722e34060f1f8b1c> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4ef739c1722e34060f1f8b1c> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0360206998461" .
+<http://foursquare2rdf.com/Venue/4ef739c1722e34060f1f8b1c> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.1997127234571" .
+<http://foursquare2rdf.com/Venue/4ef739c1722e34060f1f8b1c> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4ef739c1722e34060f1f8b1c> <http://foursquare2rdf/ontology/checkcount> "12" .
+<http://foursquare2rdf.com/Venue/4ef739c1722e34060f1f8b1c> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4ef739c1722e34060f1f8b1c> <http://foursquare2rdf/ontology/usercount> "6" .
+<http://foursquare2rdf.com/Venue/4ef739c1722e34060f1f8b1c> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/Venue/4e8c5ea78b81e6788ff7dd25> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4e8c5ea78b81e6788ff7dd25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4e8c5ea78b81e6788ff7dd25> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4e8c5ea78b81e6788ff7dd25> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0633899611404" .
+<http://foursquare2rdf.com/Venue/4e8c5ea78b81e6788ff7dd25> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3369207958574" .
+<http://foursquare2rdf.com/Venue/4e8c5ea78b81e6788ff7dd25> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4e8c5ea78b81e6788ff7dd25> <http://foursquare2rdf/ontology/checkcount> "11" .
+<http://foursquare2rdf.com/Venue/4e8c5ea78b81e6788ff7dd25> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4e8c5ea78b81e6788ff7dd25> <http://foursquare2rdf/ontology/usercount> "6" .
+<http://foursquare2rdf.com/Venue/4e8c5ea78b81e6788ff7dd25> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/Venue/4d8a39dcf607a09305f0fa86> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4d8a39dcf607a09305f0fa86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4d8a39dcf607a09305f0fa86> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4d8a39dcf607a09305f0fa86> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.089389" .
+<http://foursquare2rdf.com/Venue/4d8a39dcf607a09305f0fa86> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.337421" .
+<http://foursquare2rdf.com/Venue/4d8a39dcf607a09305f0fa86> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4d8a39dcf607a09305f0fa86> <http://foursquare2rdf/ontology/checkcount> "2" .
+<http://foursquare2rdf.com/Venue/4d8a39dcf607a09305f0fa86> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4d8a39dcf607a09305f0fa86> <http://foursquare2rdf/ontology/usercount> "2" .
+<http://foursquare2rdf.com/Venue/4d8a39dcf607a09305f0fa86> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://www.w3.org/2000/01/rdf-schema#label> "Clothing Store" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://purl.org/net/vocab/2004/03/label#plural> "Clothing Stores" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://purl.org/net/vocab/2004/03/label#short> "Apparel" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
+<http://foursquare2rdf.com/Venue/4e4fc0582271a1bdc3e22cd3> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4e4fc0582271a1bdc3e22cd3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4e4fc0582271a1bdc3e22cd3> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4e4fc0582271a1bdc3e22cd3> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0734392344263" .
+<http://foursquare2rdf.com/Venue/4e4fc0582271a1bdc3e22cd3> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3444018363953" .
+<http://foursquare2rdf.com/Venue/4e4fc0582271a1bdc3e22cd3> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4e4fc0582271a1bdc3e22cd3> <http://foursquare2rdf/ontology/checkcount> "14" .
+<http://foursquare2rdf.com/Venue/4e4fc0582271a1bdc3e22cd3> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4e4fc0582271a1bdc3e22cd3> <http://foursquare2rdf/ontology/usercount> "14" .
+<http://foursquare2rdf.com/Venue/4e4fc0582271a1bdc3e22cd3> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> .
+<http://foursquare2rdf.com/Venue/4eb59930dab4fe5111ba346d> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4eb59930dab4fe5111ba346d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4eb59930dab4fe5111ba346d> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4eb59930dab4fe5111ba346d> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "29.974474" .
+<http://foursquare2rdf.com/Venue/4eb59930dab4fe5111ba346d> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.287446" .
+<http://foursquare2rdf.com/Venue/4eb59930dab4fe5111ba346d> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4eb59930dab4fe5111ba346d> <http://foursquare2rdf/ontology/checkcount> "2" .
+<http://foursquare2rdf.com/Venue/4eb59930dab4fe5111ba346d> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4eb59930dab4fe5111ba346d> <http://foursquare2rdf/ontology/usercount> "2" .
+<http://foursquare2rdf.com/Venue/4eb59930dab4fe5111ba346d> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/Venue/4f1aefbae4b0bf7628b22b86> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4f1aefbae4b0bf7628b22b86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4f1aefbae4b0bf7628b22b86> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4f1aefbae4b0bf7628b22b86> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.1148635827261" .
+<http://foursquare2rdf.com/Venue/4f1aefbae4b0bf7628b22b86> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3440525927696" .
+<http://foursquare2rdf.com/Venue/4f1aefbae4b0bf7628b22b86> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4f1aefbae4b0bf7628b22b86> <http://foursquare2rdf/ontology/checkcount> "1" .
+<http://foursquare2rdf.com/Venue/4f1aefbae4b0bf7628b22b86> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4f1aefbae4b0bf7628b22b86> <http://foursquare2rdf/ontology/usercount> "1" .
+<http://foursquare2rdf.com/Venue/4f1aefbae4b0bf7628b22b86> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/Venue/4e53fe30d4c05e0079f9a35d> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4e53fe30d4c05e0079f9a35d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4e53fe30d4c05e0079f9a35d> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas" .
+<http://foursquare2rdf.com/Venue/4e53fe30d4c05e0079f9a35d> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.10204" .
+<http://foursquare2rdf.com/Venue/4e53fe30d4c05e0079f9a35d> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.37605" .
+<http://foursquare2rdf.com/Venue/4e53fe30d4c05e0079f9a35d> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4e53fe30d4c05e0079f9a35d> <http://foursquare2rdf/ontology/checkcount> "3" .
+<http://foursquare2rdf.com/Venue/4e53fe30d4c05e0079f9a35d> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4e53fe30d4c05e0079f9a35d> <http://foursquare2rdf/ontology/usercount> "3" .
+<http://foursquare2rdf.com/Venue/4e53fe30d4c05e0079f9a35d> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/Venue/4f3a940fe4b024185c1b1cc7> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4f3a940fe4b024185c1b1cc7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4f3a940fe4b024185c1b1cc7> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas store" .
+<http://foursquare2rdf.com/Venue/4f3a940fe4b024185c1b1cc7> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.1027183532715" .
+<http://foursquare2rdf.com/Venue/4f3a940fe4b024185c1b1cc7> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3200569152832" .
+<http://foursquare2rdf.com/Venue/4f3a940fe4b024185c1b1cc7> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4f3a940fe4b024185c1b1cc7> <http://foursquare2rdf/ontology/checkcount> "1" .
+<http://foursquare2rdf.com/Venue/4f3a940fe4b024185c1b1cc7> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4f3a940fe4b024185c1b1cc7> <http://foursquare2rdf/ontology/usercount> "1" .
+<http://foursquare2rdf.com/Venue/4f3a940fe4b024185c1b1cc7> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d102951735> .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d102951735> <http://www.w3.org/2000/01/rdf-schema#label> "Accessories Store" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d102951735> <http://purl.org/net/vocab/2004/03/label#plural> "Accessories Stores" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d102951735> <http://purl.org/net/vocab/2004/03/label#short> "Accessories" .
+<http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d102951735> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory> .
+<http://foursquare2rdf.com/Venue/4e4face6628441666990feec> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4e4face6628441666990feec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4e4face6628441666990feec> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas Originals" .
+<http://foursquare2rdf.com/Venue/4e4face6628441666990feec> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0729378668582" .
+<http://foursquare2rdf.com/Venue/4e4face6628441666990feec> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3450455665588" .
+<http://foursquare2rdf.com/Venue/4e4face6628441666990feec> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4e4face6628441666990feec> <http://foursquare2rdf/ontology/checkcount> "10" .
+<http://foursquare2rdf.com/Venue/4e4face6628441666990feec> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4e4face6628441666990feec> <http://foursquare2rdf/ontology/usercount> "9" .
+<http://foursquare2rdf.com/Venue/4e4face6628441666990feec> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> .
+<http://foursquare2rdf.com/Venue/4dc12716d22da01533482956> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4dc12716d22da01533482956> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4dc12716d22da01533482956> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas Factory Outlet Stores" .
+<http://foursquare2rdf.com/Venue/4dc12716d22da01533482956> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "29.9838927999466" .
+<http://foursquare2rdf.com/Venue/4dc12716d22da01533482956> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3222816565906" .
+<http://foursquare2rdf.com/Venue/4dc12716d22da01533482956> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4dc12716d22da01533482956> <http://foursquare2rdf/ontology/checkcount> "67" .
+<http://foursquare2rdf.com/Venue/4dc12716d22da01533482956> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4dc12716d22da01533482956> <http://foursquare2rdf/ontology/usercount> "39" .
+<http://foursquare2rdf.com/Venue/4dc12716d22da01533482956> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/Venue/4e6b52b618381ea1be491238> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4e6b52b618381ea1be491238> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4e6b52b618381ea1be491238> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas Carrefoure" .
+<http://foursquare2rdf.com/Venue/4e6b52b618381ea1be491238> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "29.9822094382924" .
+<http://foursquare2rdf.com/Venue/4e6b52b618381ea1be491238> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.3163886205859" .
+<http://foursquare2rdf.com/Venue/4e6b52b618381ea1be491238> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4e6b52b618381ea1be491238> <http://foursquare2rdf/ontology/checkcount> "37" .
+<http://foursquare2rdf.com/Venue/4e6b52b618381ea1be491238> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4e6b52b618381ea1be491238> <http://foursquare2rdf/ontology/usercount> "19" .
+<http://foursquare2rdf.com/Venue/4e6b52b618381ea1be491238> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d1f2941735> .
+<http://foursquare2rdf.com/Venue/4e1f037bc65bd9e1fde316d9> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4e1f037bc65bd9e1fde316d9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4e1f037bc65bd9e1fde316d9> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas Factory Outlet" .
+<http://foursquare2rdf.com/Venue/4e1f037bc65bd9e1fde316d9> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "29.9606264773674" .
+<http://foursquare2rdf.com/Venue/4e1f037bc65bd9e1fde316d9> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.2479183383837" .
+<http://foursquare2rdf.com/Venue/4e1f037bc65bd9e1fde316d9> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4e1f037bc65bd9e1fde316d9> <http://foursquare2rdf/ontology/checkcount> "129" .
+<http://foursquare2rdf.com/Venue/4e1f037bc65bd9e1fde316d9> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4e1f037bc65bd9e1fde316d9> <http://foursquare2rdf/ontology/usercount> "13" .
+<http://foursquare2rdf.com/Venue/4ef89d3729c268318a63e306> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4ef89d3729c268318a63e306> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4ef89d3729c268318a63e306> <http://www.w3.org/2000/01/rdf-schema#label> "Ra store (adidas-Reebok-Geox-Vans))" .
+<http://foursquare2rdf.com/Venue/4ef89d3729c268318a63e306> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0544772796057" .
+<http://foursquare2rdf.com/Venue/4ef89d3729c268318a63e306> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.1973866399482" .
+<http://foursquare2rdf.com/Venue/4ef89d3729c268318a63e306> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4ef89d3729c268318a63e306> <http://foursquare2rdf/ontology/checkcount> "1" .
+<http://foursquare2rdf.com/Venue/4ef89d3729c268318a63e306> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4ef89d3729c268318a63e306> <http://foursquare2rdf/ontology/usercount> "1" .
+<http://foursquare2rdf.com/Venue/4ef89d3729c268318a63e306> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> .
+<http://foursquare2rdf.com/Venue/4ebeba6ee3005ff9293beb50> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4ebeba6ee3005ff9293beb50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4ebeba6ee3005ff9293beb50> <http://www.w3.org/2000/01/rdf-schema#label> "multiple Store Levi's / Adidas /timberland/vans / Geox/rebook/quicksilver" .
+<http://foursquare2rdf.com/Venue/4ebeba6ee3005ff9293beb50> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0493645392332" .
+<http://foursquare2rdf.com/Venue/4ebeba6ee3005ff9293beb50> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.1973027658922" .
+<http://foursquare2rdf.com/Venue/4ebeba6ee3005ff9293beb50> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4ebeba6ee3005ff9293beb50> <http://foursquare2rdf/ontology/checkcount> "7" .
+<http://foursquare2rdf.com/Venue/4ebeba6ee3005ff9293beb50> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4ebeba6ee3005ff9293beb50> <http://foursquare2rdf/ontology/usercount> "3" .
+<http://foursquare2rdf.com/Venue/4ebeba6ee3005ff9293beb50> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> .
+<http://foursquare2rdf.com/Venue/4f8d6107e4b02aede0473f98> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4f8d6107e4b02aede0473f98> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4f8d6107e4b02aede0473f98> <http://www.w3.org/2000/01/rdf-schema#label> "adidas Store (Dandy Mall)" .
+<http://foursquare2rdf.com/Venue/4f8d6107e4b02aede0473f98> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0614566948015" .
+<http://foursquare2rdf.com/Venue/4f8d6107e4b02aede0473f98> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.0265751468337" .
+<http://foursquare2rdf.com/Venue/4f8d6107e4b02aede0473f98> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4f8d6107e4b02aede0473f98> <http://foursquare2rdf/ontology/checkcount> "3" .
+<http://foursquare2rdf.com/Venue/4f8d6107e4b02aede0473f98> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4f8d6107e4b02aede0473f98> <http://foursquare2rdf/ontology/usercount> "3" .
+<http://foursquare2rdf.com/Venue/4f8d6107e4b02aede0473f98> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> .
+<http://foursquare2rdf.com/Venue/4ea29db7490102dac2ad4ee8> <http://dbpedia.org/ontology/owningCompany> <http://dbpedia.org/resource/Adidas> .
+<http://foursquare2rdf.com/Venue/4ea29db7490102dac2ad4ee8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue> .
+<http://foursquare2rdf.com/Venue/4ea29db7490102dac2ad4ee8> <http://www.w3.org/2000/01/rdf-schema#label> "Adidas Factory Outlet" .
+<http://foursquare2rdf.com/Venue/4ea29db7490102dac2ad4ee8> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> "30.0614766268819" .
+<http://foursquare2rdf.com/Venue/4ea29db7490102dac2ad4ee8> <http://www.w3.org/2003/01/geo/wgs84_pos#long> "31.4822124830208" .
+<http://foursquare2rdf.com/Venue/4ea29db7490102dac2ad4ee8> <http://dbpedia.org/property/locationCountry> "Egypt" .
+<http://foursquare2rdf.com/Venue/4ea29db7490102dac2ad4ee8> <http://foursquare2rdf/ontology/checkcount> "21" .
+<http://foursquare2rdf.com/Venue/4ea29db7490102dac2ad4ee8> <http://foursquare2rdf/ontology/tipcount> "0" .
+<http://foursquare2rdf.com/Venue/4ea29db7490102dac2ad4ee8> <http://foursquare2rdf/ontology/usercount> "13" .
+<http://foursquare2rdf.com/Venue/4ea29db7490102dac2ad4ee8> <http://purl.org/dc/terms/subject> <http://foursquare2rdf.com/VenueCategory/4bf58dd8d48988d103951735> .

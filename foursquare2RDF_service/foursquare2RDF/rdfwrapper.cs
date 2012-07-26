@@ -72,9 +72,12 @@ namespace foursquare2RDF
                     "?subject <http://www.w3.org/2000/01/rdf-schema#label> ?literal. " +
                     "?subject <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?type ." +
                     "Filter ( " +
+                    "("+
                     "?type = <http://dbpedia.org/resource/Public_company> || " +
                     "?type= <http://dbpedia.org/resource/Aktiengesellschaft> || " +
                     "?type= <http://dbpedia.org/ontology/Company>" +
+                    ")"+
+                    "(LANG(?label) = \"\" || LANGMATCHES(LANG(?label), \"en\"))"+
                     ")" +
                     "?literal bif:contains '\"" + company.Escape('\'') + "\"'.} limit " + limit + "";
 

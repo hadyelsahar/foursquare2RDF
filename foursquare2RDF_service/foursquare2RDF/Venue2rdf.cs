@@ -14,6 +14,7 @@ namespace foursquare2RDF
     public class Venue2rdf : IVenue2rdf
     {
         Graph VenuesGraph;
+        TripleStore VenuesTripleStore;
         rdfwrapper rdfWrapper;
         #region OWLproperties
         public static IUriNode typeProperty;
@@ -31,6 +32,8 @@ namespace foursquare2RDF
         public static IUriNode subjectTypeProperty;
         #endregion
 
+
+
         /// <summary>
         /// class constructor , loading ontology into Venuesgraph
         /// </summary>
@@ -38,6 +41,8 @@ namespace foursquare2RDF
         {
             rdfWrapper = new rdfwrapper("VenuesDB.rdf");
             VenuesGraph = rdfWrapper.readFileIntoGraph();
+            VenuesTripleStore = new TripleStore();
+            VenuesTripleStore.Add(VenuesGraph, true);
 
             #region properties Definition
             typeProperty = VenuesGraph.CreateUriNode(new Uri("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"));
@@ -54,7 +59,6 @@ namespace foursquare2RDF
             owningCompanyProperty = VenuesGraph.CreateUriNode(new Uri("http://dbpedia.org/ontology/owningCompany"));
             subjectTypeProperty = VenuesGraph.CreateUriNode(new Uri("http://purl.org/dc/terms/subject"));
             #endregion
-
         }
 
         /// <summary>
@@ -74,6 +78,7 @@ namespace foursquare2RDF
                 {
 
                     JObject venuesObject = venuewrapper.getVenues(venue, near);
+
                     JToken S1 = venuesObject["response"]["venues"];
 
                     //adding the company properties extracted from dbpedia to the Graph
@@ -86,13 +91,16 @@ namespace foursquare2RDF
 
                 }
 
+                if (VenuesTripleStore.HasGraph(VenuesGraph.BaseUri))
+                    VenuesTripleStore.Remove(VenuesGraph.BaseUri);
+                VenuesTripleStore.Add(VenuesGraph, false);
                 rdfWrapper.writeGraphIntoFile(VenuesGraph);
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
+                util.log("faled to add to venues RDF file using near property :" + ex.Message);
                 return false;
-
             }
         }
 
@@ -122,16 +130,180 @@ namespace foursquare2RDF
                     VenuesGraph = assertSpecialPropertiesToGraph(VenuesGraph, S1, Tools.CopyNode(companyTriples[1].Subject, VenuesGraph));
                 }
 
+                if (VenuesTripleStore.HasGraph(VenuesGraph.BaseUri))
+                    VenuesTripleStore.Remove(VenuesGraph.BaseUri);
+                VenuesTripleStore.Add(VenuesGraph, true);
                 rdfWrapper.writeGraphIntoFile(VenuesGraph);
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
-
+                util.log("faled to add to venues RDF file using LL property :" + ex.Message);
                 return false;
             }
         }
 
+        /// <summary>
+        /// get the latest statistics of the stored graph
+        /// </summary>
+        /// <returns>Json object contains the number of venues and categories and brands</returns>
+        public string getStatistics()
+        {
+            string json = "{";
+
+            try
+            {
+                //selecting the number of venyes
+                Object results = VenuesTripleStore.ExecuteQuery("SELECT" +
+                "  (count(distinct ?x) as ?venuesCount) " +
+                "  (count(distinct ?y) as ?categoriesCount) " +
+                "  (count(distinct ?z) as ?BrandsCount) " +
+                "WHERE { " +
+                "?z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Company>." +
+                "optional {?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venue>}." +
+                "optional {?y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://foursquare2rdf/ontology/venuecategory>}" +
+                "}"
+                 );
+
+                if (results is SparqlResultSet)
+                {
+                    //add venues count into 
+                    SparqlResultSet rset = (SparqlResultSet)results;
+                    foreach (SparqlResult result in rset)
+                    {
+                        json += "'venuesCount':" + ((ILiteralNode)result.Value("venuesCount")).Value;
+                        json += "'categoriesCount':" + ((ILiteralNode)result.Value("categoriesCount")).Value;
+                        json += "'BrandsCount':" + ((ILiteralNode)result.Value("BrandsCount")).Value;
+                    }
+                }
+
+                json += "}";
+
+                return json;
+            }
+            catch (Exception ex)
+            {
+                util.log("can't get statistics:" + ex.Message);
+                return "false";
+            }
+        }
+
+
+        /// <summary>
+        /// get all venues , categories , brands 
+        /// basic implementation would be retrieving one brand name only for each search 
+        /// due to complexity & size of returned json object would exceed limits FOR EX: 
+        /// { Brand: { URI =  "uri " , Name = "name",
+        /// Venues : [
+        /// {"URI": "" , name : "" , longtitude : "" , latitude:""  , categories : [{    },{    },{    }]} , 
+        /// {"URI": "" , name : "" , longtitude : "" , latitude:""  ,categories : [{    },{    },{     }]} 
+        ///  ] }}
+        ///  still Categories not implemented
+        /// </summary>
+        /// <param name="BrandName">search witha brand name , ex : nike</param>
+        /// <returns>json string contains list of venues , categories , brand names </returns>
+        public string getVenues(string BrandName, int limit = 1)
+        {
+
+            string query = "SELECT distinct " +
+                "?brand ?label " +
+                "WHERE { " +
+                "?brand <" + typeProperty.Uri.ToString() + "> <http://dbpedia.org/ontology/Company>." +
+                "?brand <" + labelProperty.Uri.ToString() + "> ?label ." +
+                "?label <bif:contains> \"" + BrandName.Escape('\'').Trim() + "\"" +
+                "FILTER(LANG(?label) = \"\" || LANGMATCHES(LANG(?label), \"en\"))" +
+                "} limit " + limit;
+
+            string json = "";
+            try
+            {
+
+
+                //should query from local store , just there's issues with dotnetrdf  to be fixed !
+                SparqlResultSet brandResultSet = util.executeSparqlQuery(query);
+
+                //FOR EACH BRAND :
+                foreach (SparqlResult brandResult in (SparqlResultSet)brandResultSet)
+                {
+                    //add the brand details :
+                    json += "{'brand':{";
+                    json += "'URI' : '" + ((IUriNode)brandResult.Value("brand")).ToString() + "'";
+                    json += ",";
+                    json += "'name' : '" + ((ILiteralNode)brandResult.Value("label")).Value + "'";
+
+
+                    //getting venues underneath this brand 
+
+                    query = "Select distinct " +
+                        "?venue ?label ?long ?lat ?tips ?checkins ?users " +
+                        "where {" +
+                        "?venue <" + owningCompanyProperty + ">  <" + ((IUriNode)brandResult.Value("brand")).ToString() + ">. " +
+                        "?venue  <" + labelProperty + "> ?label. " +
+                        "?venue  <" + longtitudeProperty + "> ?long. " +
+                        "?venue  <" + latitudeProperty + ">   ?lat. " +
+                        "?venue  <" + longtitudeProperty + "> ?long . " +
+                        "?venue  <" + checkCountProperty + "> ?checkins. " +
+                        "?venue  <" + userCountProperty + ">  ?users. " +
+                        "?venue  <" + tipCountProperty + ">  ?tips " +
+                        "}";
+                    //query = " select ?tips where { ?x <" + tipCountProperty + "> ?tips }";
+
+                    Object venuesResultSet = VenuesTripleStore.ExecuteQuery(query);
+
+                    json += " ,'venues':[";
+
+
+                    if (venuesResultSet is SparqlResultSet)
+                    {
+
+                        //FOR EACH BRAND:
+                        foreach (SparqlResult venuesResult in (SparqlResultSet)venuesResultSet)
+                        {
+                            //collectingData 
+                            string venueURI = ((IUriNode)venuesResult.Value("venue")).ToString();
+                            string venuelabel = ((ILiteralNode)venuesResult.Value("label")).Value;
+                            string venuelong = ((ILiteralNode)venuesResult.Value("long")).Value;
+                            string venuelat = ((ILiteralNode)venuesResult.Value("lat")).Value;
+                            string venuecheckins = ((ILiteralNode)venuesResult.Value("checkins")).Value;
+                            string venueusers = ((ILiteralNode)venuesResult.Value("users")).Value;
+                            string venuetips = ((ILiteralNode)venuesResult.Value("tips")).Value;
+
+
+                            //add the Brand Details :
+                            json += "{";
+                            json +=  "\"URI\" :\"" + venueURI + "\"";
+                            json += ",";
+                            json += "\"name\" : \""+ venuelabel + "\"";
+                            json += ",";
+                            json += "\"longtitude\" : \"" + venuelong + "\"";
+                            json += ",";
+                            json += "\"latitude\" : \"" + venuelat + "\"";
+                            json += ",";
+                            json += "\"checkinCount\" : \"" + venuecheckins + "\"";
+                            json += ",";
+                            json += "\"userCount\" : \"" + venueusers + "\"";
+                            json += ",";
+                            json += "\"tipsCount\" : \"" + venuetips + "\"";
+                            json += "},";
+                        }
+
+                       json = json.Remove(json.Length - 1);
+                    }
+
+                    json += "]}";
+                }
+
+                json += ",'notification':{'success':true}}";
+            }
+            catch (Exception ex)
+            {
+                json = "{'notification':{'success':false}}";
+                util.log(ex.Message);
+
+            }
+
+            return json;
+        }
 
         #region helpers
 
@@ -144,7 +316,7 @@ namespace foursquare2RDF
         /// <param name="S1">Jtoken object of the venues array after being parsed by Newtonsoft Json parser</param>
         /// <param name="ownerCompany">the Inode of the owner company that was extracted from dbpedia to be joined with the found venues from the foursquare api</param>
         /// <returns>the new graph after addition of special triples</returns>
-        public Graph assertSpecialPropertiesToGraph(Graph g , JToken S1 , INode ownerCompany)
+        private Graph assertSpecialPropertiesToGraph(Graph g, JToken S1, INode ownerCompany)
         {
             //iterating over venues places found from foursquare API and adding special properties to the graph
             foreach (JToken element in S1)
@@ -153,7 +325,8 @@ namespace foursquare2RDF
                 //engaging the returned venue to the company name
                 VenuesGraph.Assert(new Triple(venueNode, owningCompanyProperty, ownerCompany));
 
-                //filling node labels 
+                //filling node labels
+                g.Assert(new Triple(venueNode, typeProperty, VenuesGraph.CreateUriNode(new Uri("http://foursquare2rdf/ontology/venue"))));
                 g.Assert(new Triple(venueNode, labelProperty, VenuesGraph.CreateLiteralNode(element["name"].ToString())));
                 g.Assert(new Triple(venueNode, latitudeProperty, VenuesGraph.CreateLiteralNode(element["location"]["lat"].ToString())));
                 g.Assert(new Triple(venueNode, longtitudeProperty, VenuesGraph.CreateLiteralNode(element["location"]["lng"].ToString())));
@@ -163,24 +336,24 @@ namespace foursquare2RDF
                 g.Assert(new Triple(venueNode, userCountProperty, VenuesGraph.CreateLiteralNode(element["stats"]["usersCount"].ToString())));
 
 
-            //iterating over categories for each venues
+                //iterating over categories for each venues
                 foreach (JToken category in element["categories"])
                 {
                     IUriNode venueCategory = VenuesGraph.CreateUriNode(new Uri("http://foursquare2RDF.com/VenueCategory/" + category["id"]));
 
                     //connect the venue to it's category 
-                    g.Assert(new Triple(venueNode, subjectTypeProperty, venueCategory ));
+                    g.Assert(new Triple(venueNode, subjectTypeProperty, venueCategory));
                     g.Assert(new Triple(venueCategory, labelProperty, VenuesGraph.CreateLiteralNode(category["name"].ToString())));
                     g.Assert(new Triple(venueCategory, labelPluralProperty, VenuesGraph.CreateLiteralNode(category["pluralName"].ToString())));
                     g.Assert(new Triple(venueCategory, labelShortProperty, VenuesGraph.CreateLiteralNode(category["shortName"].ToString())));
-                    g.Assert(new Triple(venueCategory, typeProperty, VenuesGraph.CreateUriNode(new Uri ("http://foursquare2rdf/ontology/venuecategory"))));
+                    g.Assert(new Triple(venueCategory, typeProperty, VenuesGraph.CreateUriNode(new Uri("http://foursquare2rdf/ontology/venuecategory"))));
 
                 }
             }
 
-            return g; 
+            return g;
         }
-        
+
         #endregion
 
     }
