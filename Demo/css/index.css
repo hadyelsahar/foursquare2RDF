@@ -1,0 +1,145 @@
+/*
+colors : 
+background color : #f0f1f3;
+forground color : white ;
+main text color : black ; 
+shadow color : #b2b2b2;
+subtitle color : #b2b2b2;
+*/
+/*
+font sizes:
+main size : 16px;
+larger size : 28px;
+large size : 25px;
+small size :12px;
+*/
+
+.clearfix
+{
+    clear:both;
+}
+body
+{
+    background-color: #f0f1f3;
+    font-family : Century Gothic,Sans-Serif,helvetica , Arial ;
+}
+
+
+.content
+{
+    width: 999px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: White;
+    -webkit-box-shadow: 0px 0px 1px 1px #b2b2b2;
+    box-shadow: 0px 0px 1px 1px #b2b2b2;
+    min-height:500px;
+    padding:20px;
+}
+
+.content .statistics 
+{
+    display:block;
+margin:20px;
+}
+.content .statistics span 
+{
+ font-size:25px;   
+ max-width:330px;
+ margin:20px; 
+ margin-top:0px;
+ display:inline-block;
+ text-shadow: 1px 1px 1px #a3a3a3;
+ filter: dropshadow(color=#a3a3a3, offx=1, offy=1);
+}
+
+.bigtitle
+{
+  font-size:22px;   
+ margin:20px; 
+ margin-top:0px;
+ display:inline-block;
+ text-shadow: 1px 1px 1px #a3a3a3;
+ filter: dropshadow(color=#a3a3a3, offx=1, offy=1);   
+}
+
+.title
+{
+ font-size:16px;
+ color:black;
+ margin-bottom:10px;
+}
+
+
+.subtitle
+{
+ font-size:12px;
+ color:#b2b2b2;
+ margin-bottom:10px;
+ margin-top:15px;
+}
+
+
+.content .searcharea
+{
+ margin-left:20px;  
+ padding:15px;
+ border:1px solid #b2b2b2  ;
+}
+
+
+.content .searcharea input
+{
+    font-size:larger;
+    
+}
+
+.content .searcharea .buttonsHolder
+{
+ float:right;   
+}
+.content .searcharea .button
+{
+ display:inline-block;
+ padding-left:25px;
+ padding-right:25px;
+ padding-bottom:5px;
+ padding-top:5px;
+ margin-top:10px;
+ margin-left:20px;
+ color:White;
+ text-decoration:none;
+ background-color:#bc123d;
+}
+
+.content .searcharea .button:hover
+{
+    background-color:#e03873;
+}
+
+.content .searchresults
+{
+ margin-top:10px;
+ margin-left:10px;  
+ padding:10px;
+ border:1px solid #b2b2b2  ;
+}
+
+.ownercompany
+{
+ font-size:28px;   
+}
+
+.content .searchresults .venue
+{
+ margin:5px;
+ padding:5px;
+ background-color:  #f0f1f3;
+}
+
+.field
+{
+display:inline-block;
+margin-right:10px;    
+}
