@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
     <title>FourSquare2RDF</title>
-    <script src="js/index.js" type="text/javascript"></script>
     <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
     <link rel="Stylesheet" href="css/index.css" type="text/css" />
 </head>
 <body>
@@ -13,19 +13,31 @@
 
 <span class="statistics">
 <div class="subtitle">inside our RDF file there are : </div>
-<span class="venuesCount">venues : 1222</span>
-<span class="categoryCount">categories : 15</span>
-<span class="brandsCount">brands : 52</span>
+
+<span id="venuesCount" class="venuesCount">venues : </span>
+<span id="categoryCount" class="categoryCount">categories : </span>
+<span id="brandsCount" class="brandsCount">brands : </span>
+
 </span>
 
 <div class="searcharea">
-<div class="title">Search venues</div>
+<div class="title">add venues</div>
 <div class="subtitle">near:</div>
-<input type="text" class="nearTextInput" id="near" />
+<input type="text" id="nearTextInput" class="nearTextInput" id="near" />
 <div class="subtitle">venue name:</div>
-<input type="text" class="venueTextInput" id="venue" />
+<input type="text" id="venueNameTextInput" class="venueTextInput" id="venue" />
 <div class="buttonsHolder">
-<a href="#" class="button">Search</a><a href="#" class="button">Add to RDF</a>
+<a href="#" id="addToRDFButton" class="button">Add to RDF</a>
+</div>
+<div class="clearfix"></div>
+</div>
+
+<div class="searcharea">
+<div class="title">search brands</div>
+<div class="subtitle">brand name:</div>
+<input type="text" id="searchTextInput" class="venueTextInput" id="brand" />
+<div class="buttonsHolder">
+<a href="#" id="searchButton" class="button">Search</a>
 </div>
 <div class="clearfix"></div>
 </div>
@@ -33,11 +45,12 @@
 <div class="searchresults">
 <div class="title">Search Results</div>
 
-<div class="bigtitle">
+<div id="ownercompany" class="bigtitle">
 <span class="ownercompany field">ADIDAS , INC </span>
 <span class="field">total checkins : 45 </span>
 </div>
 
+<div id="venues">
 <div class="venue">
 <span class="field">Adidas CityCenter </span>
 <span class="field">checkins : 10 </span> 
@@ -59,6 +72,7 @@
 <span class="field">tips : 0</span>
 </div>
 
+</div>
 </div>
 
 
