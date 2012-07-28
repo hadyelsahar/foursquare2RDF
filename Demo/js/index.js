@@ -23,7 +23,8 @@ function Data_loadStatistics() {
 }
 
 function Data_searchVenues(brandName) {
-    $("searchresults").hide();
+    $(".searchresults .results").hide();
+    $(".searchresults #loading").show();
 
     $.ajax({
         type: "get",
@@ -34,8 +35,10 @@ function Data_searchVenues(brandName) {
         success: function (msg) {
             console.log(msg);
             eval("var x = " + msg);
-            GUI_searchVenues(x);
-            $(".searchresults").slideDown(1000);
+            if (x.notification.success) {
+                GUI_searchVenues(x);
+                $(".searchresults").slideDown(1000);
+            }
         }
         , crossDomain: true
     });
@@ -62,9 +65,12 @@ function Data_addToRDF(brandName, near, callback) {
 
 
 function GUI_loadStatistics(data) {
-    $("#venuesCount").text("venues: " + data.venuesCount);
-    $("#categoryCount").text("Categories: " + data.categoriesCount);
-    $("#brandsCount").text("brands: " + data.BrandsCount);
+animateNumbers ( $("#venuesCount") ,data.venuesCount , $("#venuesCount").text() *1);
+animateNumbers ( $("#categoryCount") ,data.categoriesCount , $("#categoryCount").text() *1);
+animateNumbers ( $("#brandsCount") ,data.BrandsCount , $("#brandsCount").text() *1);
+//    $("#venuesCount").text("venues: " + data.venuesCount);
+//    $("#categoryCount").text("Categories: " + data.categoriesCount);
+//    $("#brandsCount").text("brands: " + data.BrandsCount);
 }
 
 function GUI_searchVenues(data) {
@@ -78,12 +84,13 @@ function GUI_searchVenues(data) {
             totalcheckins += data.brand.venues[i].checkinCount * 1
         }
 
+        //hide loading img
+        $(".searchresults #loading").hide();
 
         //adding brand name and global statistics
         html = "<span class=\"ownercompany field\">" + "<a href=\"" + data.brand.URI + "\" >" + data.brand.name + "</a>" + "</span> ";
         html += "<span class=\"field\"> total checkins: " + totalcheckins + " </span>";
         $("#ownercompany").html(html);
-
         $("#venues").html("");
         html = "";
         for (i in data.brand.venues) {
@@ -92,10 +99,14 @@ function GUI_searchVenues(data) {
             html += "<span class=\"field\">checkins :" + data.brand.venues[i].checkinCount + "</span> ";
             html += "<span class=\"field\">users :" + data.brand.venues[i].tipsCount + "</span>";
             html += "<span class=\"field\">tips :" + data.brand.venues[i].userCount + "</span>";
-            html += "</div>";
+            html += "<img class=\"map\" src=\"http://maps.googleapis.com/maps/api/staticmap?center=" + data.brand.venues[i].latitude + "," + data.brand.venues[i].longtitude + "&zoom=13&size=400x90&sensor=false";
+            html += "&maptype=roadmap&markers=color:blue%7Clabel:L%7C" + data.brand.venues[i].latitude + "," + data.brand.venues[i].longtitude + "&key=AIzaSyCpxDCBUBLVAMI7hn1Ak7HaQrd-PCBCUcI\">";
+
+            html += "<div class=\"clearfix\"></div></div>";
         }
 
-        $("#venues").html(html);
+        $("#venues").append(html);
+        $(".searchresults .results").show();
         console.log(totalcheckins);
 
 
@@ -107,10 +118,29 @@ function GUI_searchVenues(data) {
     }
 }
 
+function animateNumbers(container, targetNumber, initialNumber) {
+
+    var clr = null;
+    
+    inloop();
+
+    function inloop() {
+       
+        if (initialNumber >= targetNumber) {
+            clearTimeout(clr);
+            return;
+        }
+        container.html(initialNumber += 1);
+        clr = setTimeout(inloop, 50 *((100-(targetNumber-initialNumber))/100)); //call 'inloop()' after 50 milliseconds multiplied to the difference to make an ease effect
+    }
+}
+
+
+
 $(document).ready(function () {
     $(".searchresults").hide();
     Data_loadStatistics();
-    Data_searchVenues("adidas");
+    //Data_searchVenues("adidas");
     //  Data_addToRDF("puma", "cairo");
 
     //search funcitonality
