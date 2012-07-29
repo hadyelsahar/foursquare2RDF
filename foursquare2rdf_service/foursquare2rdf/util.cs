@@ -11,10 +11,14 @@ using System.Web;
 
 namespace foursquare2RDF
 {
+    /// <summary>
+    /// this is a static class consists of some utility functions like logging  or get and post requests 
+    /// or execution of sparql queries using remote end points 
+    /// this class is not connected to the internal logic , jsut abstract functions of common functionality 
+    /// </summary>
     public static class util
     {
 
-       
         /// <summary>
         /// send a get request to a specific URI
         /// </summary>
@@ -100,6 +104,7 @@ namespace foursquare2RDF
             logWriter.Write(s + "\t" + DateTime.Now.ToLongTimeString().ToString() + "\n");
             logWriter.Close();
         }
+
         /// <summary>
         /// empty the log file 
         /// </summary>

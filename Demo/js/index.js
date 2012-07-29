@@ -46,6 +46,9 @@ function Data_searchVenues(brandName) {
 
 function Data_addToRDF(brandName, near, callback) {
 
+    $(".searchresults .results").hide();
+    $(".searchresults #loading").show();
+
     $.ajax({
         type: "get",
         url: addToRDF_near + "?callback=?" + "&venue=" + brandName + "&near=" + near,

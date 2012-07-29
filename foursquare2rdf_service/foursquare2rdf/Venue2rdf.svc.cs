@@ -11,7 +11,10 @@ using Newtonsoft.Json.Linq;
 
 namespace foursquare2RDF
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
+    /// <summary>
+    /// the main functionality Class that contains the main logic , it implementes Ivenue2RDf interface for the websservice
+    /// and it's responsible for adding new venues to the Graph or get the graph statistics or search for venues
+    /// </summary>
     public class Venue2rdf : IVenue2rdf
     {
         Graph VenuesGraph;

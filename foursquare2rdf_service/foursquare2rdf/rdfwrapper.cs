@@ -11,6 +11,10 @@ using System.Web;
 
 namespace foursquare2RDF
 {
+    /// <summary>
+    /// is the class that is responsible for any interactions with LinkedData reading from or writing to ( those in the RDF file or in remote Triple Stores like Dbpedia )
+    /// the class is initialized for each filepath so each class would interface only one local triple store
+    /// </summary>
     public class rdfwrapper
     {
         public string filepath;
@@ -60,8 +64,21 @@ namespace foursquare2RDF
         /// <param name="g">graph to be written to rdf file</param>
         public void writeGraphIntoFile(Graph g)
         {
-            NTriplesWriter ntwriter = new NTriplesWriter();
-            ntwriter.Save(g, HttpRuntime.BinDirectory + "/" + filepath);
+            try
+            {
+                NTriplesWriter ntwriter = new NTriplesWriter();
+                ntwriter.Save(g, HttpRuntime.BinDirectory + "/" + filepath);
+            }
+            catch (RdfParseException parseEx)
+            {
+                util.log("Parser Error");
+                util.log(parseEx.Message);
+            }
+            catch (RdfException rdfEx)
+            {
+                util.log("RDF Error");
+                util.log(rdfEx.Message);
+            }
         }
 
         /// <summary>
